@@ -106,3 +106,11 @@ and [IBM RedBook](https://www.redbooks.ibm.com/redpapers/pdfs/redp4641.pdf)
 Although the CP4D users by default are stored in internal LDAP it's strongly recommended that authentication would be switched to enterprise-grade password management solution such as SAML SSO or and LDAP provider for the password management.
 
 Administrators of the platform should be aware of the operations with Tokens and API keys, concepts of Concurrent session limits and shared credentials for the connections.
+
+### FIPS
+
+The Federal Information Processing Standard (FIPS) standards and guidelines for federal computer systems that are developed by National Institute of Standards and Technology (NIST) in accordance with the Federal Information Security Management Act (FISMA).
+
+Most IBM Cloud Pak® for Data software can be installed on a Red Hat® OpenShift® Container Platform cluster that is FIPS-enabled.
+
+[More details can be found here](https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=considerations-services-that-support-fips)
