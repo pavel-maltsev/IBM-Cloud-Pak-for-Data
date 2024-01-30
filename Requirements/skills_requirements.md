@@ -90,6 +90,7 @@ https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=requirements-hardware
 
 CP4D also supports the specific subset of the storages within the cluster which are listed by the link https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=planning-storage-considerations
 Those may differ on the target deployment platform, so different skills may be required. In most of the cases the NFS and Portworx storage types satisfy the typical configuration requirements.
+
 Important information to consider is that there may be the differences of the supported storyage types by the specific CP4D services you plan to run. This information can be also found in CP4D documentation by the link https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=requirements-storage
 
 ## Security skills and considerations
