@@ -79,7 +79,9 @@ As of 4.8.1 release of CP4D the supported OCP versions are:
 
 which means that the skils on OCP should be up to date for the release mentioned.
 
-## Hardware requirements
+# Maintenance of Cloud Pak for Data (key skills)
+
+## Hardware skills and requirements
 
 IBM Cloud Pak for Data can be deployed both on bare metal and virtualised environments, different types of the hardware (x86-64 vs Power vs z(s390x)). The skills related to management those are dependent on the selected options from the documentation:
 https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=requirements-hardware
@@ -89,3 +91,18 @@ https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=requirements-hardware
 CP4D also supports the specific subset of the storages within the cluster which are listed by the link https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=planning-storage-considerations
 Those may differ on the target deployment platform, so different skills may be required. In most of the cases the NFS and Portworx storage types satisfy the typical configuration requirements.
 Important information to consider is that there may be the differences of the supported storyage types by the specific CP4D services you plan to run. This information can be also found in CP4D documentation by the link https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=requirements-storage
+
+## Security skills and considerations
+
+### CPbD
+
+Cloud Pak for Data follows IBM Security and Privacy by Design (SPbD). Security and Privacy by Design (SPbD) at IBM is a set of focused security and privacy practices, including vulnerability management, threat modeling, penetration testing, privacy assessments, security testing, and patch management.
+
+This information can be in details reviewed [by the link](https://www.ibm.com/support/pages/ibm-security-and-privacy-design)
+and [IBM RedBook](https://www.redbooks.ibm.com/redpapers/pdfs/redp4641.pdf)
+
+### LDAP
+
+Although the CP4D users by default are stored in internal LDAP it's strongly recommended that authentication would be switched to enterprise-grade password management solution such as SAML SSO or and LDAP provider for the password management.
+
+Administrators of the platform should be aware of the operations with Tokens and API keys, concepts of Concurrent session limits and shared credentials for the connections.
