@@ -8,4 +8,4 @@ MANTA Automated Data Lineage for IBM Cloud Pak for Data ("the Program") is sold 
 
 [The details can be found by this link](https://www.ibm.com/support/pages/manta-automated-data-lineage-ibm-cloud-pak-data-script-counting-details)
 This document contains teh proper details on how to count the scripts for each of the supported data sources or data transformation solutions.
-The version as per Jan 2024 is saved as PDF [here](pavel-maltsev/IBM-Cloud-Pak-for-Data/DataLineage/docs/MANTA Automated Data Lineage for IBM Cloud Pak for Data Script counting details.pdf), but please ensure you use the latest information from the vendor available online or provided by sales representatives.
+The version as per Jan 2024 is saved as PDF [here](https://github.com/pavel-maltsev/IBM-Cloud-Pak-for-Data/blob/main/DataLineage/docs/MANTA Automated Data Lineage for IBM Cloud Pak for Data Script counting details.pdf), but please ensure you use the latest information from the vendor available online or provided by sales representatives.
