@@ -1,5 +1,9 @@
 # Creation of the new Reference data sets
 
+## Disclaimer
+
+The current guide and screenshots are valid for the IBM CP4D v4.8.2
+
 ## Before you start
 
 - Make sure you have the "Reference Data" category in the Glossary
