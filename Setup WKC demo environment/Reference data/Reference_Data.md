@@ -1,3 +1,3 @@
 # Creation of the new Reference data sets
 
-![Core menue](step1.png)
+![step 1](RD_step1.png)
