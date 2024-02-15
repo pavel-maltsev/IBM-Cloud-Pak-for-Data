@@ -84,7 +84,7 @@ Map sequentially all the file columns to the either a pre-defined Target Column
 
 ![alt text](RD_images/rd_NAICS_step08.png)
 
-Or create a new target column where no default proper mapping is found
+Or create a new target column where no default proper mapping is found. Do not forget to select the proper column type for the mapping.
 
 ![alt text](RD_images/rd_NAICS_step09.png)
 
@@ -119,3 +119,5 @@ Publish the draft
 ![alt text](RD_images/rd_NAICS_step17.png)
 
 ![alt text](RD_images/rd_NAICS_step18.png)
+
+Congratulations, reference data set has been created and published!
