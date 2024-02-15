@@ -56,17 +56,27 @@ Now you will see the Reference data set available for CP4D users with correspond
 
 ## Create NAICS reference data set with hierarchy
 
+Add new reference data set
+
 ![alt text](RD_images/rd_NAICS_step01.png)
+
+This is the sample screenshot of the scv file data prepared
 
 ![alt text](RD_images/rd_NAICS_step02.png)
 
+Upload the file, provide the Reference Data set name and select category Reference Data
+
 ![alt text](RD_images/rd_NAICS_step03.png)
-Next
+
+Click Next
+
 ![alt text](RD_images/rd_NAICS_step04.png)
 
-First Row as column Header = ON
+Make sure the slider "First Row as column Header" is ON
 
 ![alt text](RD_images/rd_NAICS_step05.png)
+
+Map sequentially all the file columns to the either a pre-defined Target Column
 
 ![alt text](RD_images/rd_NAICS_step06.png)
 
@@ -74,17 +84,29 @@ First Row as column Header = ON
 
 ![alt text](RD_images/rd_NAICS_step08.png)
 
+Or create a new target column where no default proper mapping is found
+
 ![alt text](RD_images/rd_NAICS_step09.png)
 
 ![alt text](RD_images/rd_NAICS_step10.png)
 
+Click Next
+
 ![alt text](RD_images/rd_NAICS_step11.png)
+
+Review the Mapping
 
 ![alt text](RD_images/rd_NAICS_step12.png)
 
+Click Create
+
 ![alt text](RD_images/rd_NAICS_step13.png)
 
+Wait for the status messages pop-ups and make sure you see those as green Success ones. If not, review the error and perform changes accordingly
+
 ![alt text](RD_images/rd_NAICS_step14.png)
+
+Large reference data sets may take a while to upload
 
 ![alt text](RD_images/rd_NAICS_step15.png)
 
