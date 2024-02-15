@@ -14,7 +14,7 @@ The current guide and screenshots are valid for the IBM CP4D v4.8.2
 1. Creation of the simple flat reference data set
 2. Creation of the hierarchical reference data set
 
-## Steps to create new Reference data set
+## Create simple flat Reference data set
 
 Select the Governance - Reference Data section from main menu
 
