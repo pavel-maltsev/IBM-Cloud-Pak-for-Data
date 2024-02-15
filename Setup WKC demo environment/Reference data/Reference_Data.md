@@ -88,6 +88,8 @@ Or create a new target column where no default proper mapping is found. Do not f
 
 ![alt text](RD_images/rd_NAICS_step09.png)
 
+The following Parent value mapping is important to get the hierarchical structure.
+
 ![alt text](RD_images/rd_NAICS_step10.png)
 
 Click Next
