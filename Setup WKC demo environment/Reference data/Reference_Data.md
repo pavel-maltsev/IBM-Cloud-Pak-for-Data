@@ -9,6 +9,11 @@ The current guide and screenshots are valid for the IBM CP4D v4.8.2
 - Make sure you have the "Reference Data" category in the Glossary
 - Prepare the csv file with reference data of proper format on your own laptop
 
+## Content
+
+1. Creation of the simple flat reference data set
+2. Creation of the hierarchical reference data set
+
 ## Steps to create new Reference data set
 
 Select the Governance - Reference Data section from main menu
