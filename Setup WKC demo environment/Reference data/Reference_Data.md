@@ -21,3 +21,33 @@ upload the file, provide the Reference data set name and specify the parent cate
 Click NEXT
 
 ![alt text](RD_images/rd_step5.png)
+
+Map the columns
+
+![alt text](RD_images/rd_step6.png)
+
+![alt text](RD_images/rd_step7.png)
+
+![alt text](RD_images/rd_step8.png)
+
+Click Next and review the mapping summary
+
+![alt text](RD_images/rd_step9.png)
+
+When all columns are mapped, click Create
+
+![alt text](RD_images/rd_step10.png)
+
+Reference data set has been created in a draft stage
+
+![alt text](RD_images/rd_step11.png)
+
+You need to publish it for making it available for larger audience
+
+![alt text](RD_images/rd_step12.png)
+
+![alt text](RD_images/rd_step13.png)
+
+Now you will see the Reference data set available for CP4D users with corresponding permissions
+
+![alt text](RD_images/rd_step14.png)
