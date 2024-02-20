@@ -24,7 +24,7 @@ You may use the Deployer or similar service for configuring the proper configura
 
 For the creation of the proper demo environment you may need to add the below listed content to the CP4D IKC service. [Detailed guide can be found here](/Setup%20WKC%20demo%20environment/WKC_demo_setup_general_steps.md)
 
-1. Reference data sets - [instructions here](/Setup%20WKC%20demo%20environment/Reference%20data/Reference_Data.md)
+1. Reference data sets - [here](/Setup%20WKC%20demo%20environment/Reference%20data/Reference_Data.md)
 2. Governance rules and Policies
 3. Data Protenction rules
 4. Business terms and Categories
