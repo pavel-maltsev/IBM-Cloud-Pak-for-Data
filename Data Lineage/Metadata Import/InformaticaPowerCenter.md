@@ -19,7 +19,7 @@ this folder may contain 10ns of the files stored by the path /workflow/SomeIPCPr
 
 ## Sample content of ifpcConnectionDefinition.prm
 
-‘‘‘
+```
 [Oracleconnectionname]
 Type=Oracle
 Connection_String=someservername.com
@@ -86,11 +86,11 @@ Type=FTP
 Server_Name=XX.XX.XX.XX
 Schema_Name=/
 User_Name=User1
-‘‘‘
+```
 
 ## Sample content of ifpcServiceSettings.prm
 
-‘‘‘
+```
 [SOMENAME]
 $PMRootDir=/some/path
 $PMSessionLogDir=$PMRootDir/SessLogs
@@ -103,4 +103,4 @@ $PMTempDir=/some/path
 $PMWorkflowLogDir=/some/path/WorkflowLogs
 $PMLookupFileDir=$PMRootDir/LkpFiles
 $PMStorageDir=/some/path/Storage
-‘‘‘
+```
