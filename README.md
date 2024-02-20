@@ -1,5 +1,11 @@
 # IBM-Cloud-Pak-for-Data
 
+## Table of Contents
+
+- [Skills](#skills)
+- [Data Lineage and Manta FAQ](#manta-faq)
+- [Setting up Governance demo](#how-to-prepare-your-own-demo-environment-for-ibm-knowledge-catalog)
+
 ## Skills
 
 Team requirements for the starting the CP4D journey are [located here](/Requirements/skills_requirements.md)
