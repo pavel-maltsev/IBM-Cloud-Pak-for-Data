@@ -23,33 +23,33 @@ this folder may contain 10ns of the files stored by the path /workflow/SomeIPCPr
 [Oracleconnectionname]
 Type=Oracle
 Connection_String=someservername.com
-User_Name=User1
+User_Name=user1
 
 [MSSQLconnectionname]
 Type=MSSQL
 Server_Name=someservername.com,0000
 Database_Name=databasename
-User_Name=User1
+User_Name=user1
 
 [DB2connectionname]
 Type=DB2
 Connection_String=localservername
-User_Name=informat
+User_Name=user1
 
 [ODBCconnectionname1]
 Type=ODBC
 Connection_String=odbcserver.com
-User_Name=User1
+User_Name=user1
 
 [ODBCconnectionname2]
 Type=ODBC
 Connection_String=localservername
-User_Name=User1
+User_Name=user1
 
 [SAPBWconnectionname]
 Type=SAP BW
 Database_Name=databasename
-User_Name=INFORMAT
+User_Name=user1
 
 [SAPR3connectionname]
 Type=SAP R3
@@ -79,13 +79,13 @@ Database_Name=databasename
 Type=FTP
 Server_Name=someserver.com
 Schema_Name=/some/file/path/
-User_Name=User1
+User_Name=user1
 
 [FTPconnectionname2]
 Type=FTP
 Server_Name=XX.XX.XX.XX
 Schema_Name=/
-User_Name=User1
+User_Name=user1
 ```
 
 ## Sample content of ifpcServiceSettings.prm
