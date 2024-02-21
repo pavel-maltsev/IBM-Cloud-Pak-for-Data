@@ -1,11 +1,11 @@
-# Demo Assets with sample data
+# 1 Demo Assets with sample data
 
 This chapter describes some of the demo assets which can be used to create demonstration scenarios for the topics of data connectivity, data virtualization, datastage, data lineage, etc.
 
 > [!Important]
 > Although the majority of the listed sources do not contain any restictions for the usage, please be aware that the data assets found in the internet may be the subject to copyrights and verification of asset usability for the specific use case is the responsibility of the specialists who setup the specific demo scenario.
 
-## DVD Rental database - PostgreSQL
+## 1.1 DVD Rental database - PostgreSQL
 
 This database contains several tables, views, functions, etc which can be used to support the nice looking data lineage demo
 
@@ -22,9 +22,9 @@ The database detailed description including the ER Model, table descriptive info
 
 The guide for upload of the database content to external RDBMS is [PROVIDED HERE](https://www.postgresqltutorial.com/postgresql-getting-started/load-postgresql-sample-database/).
 
-In case of questions on how to deploy standalone Postgres database you may use the folling [chapter of my github](https://github.com/pavel-maltsev/Databases/tree/main).
+In case of questions on how to deploy standalone Postgres database you may use the following [chapter of my github](https://github.com/pavel-maltsev/Databases/tree/main).
 
-## Reference data and registers from UK officials
+## 1.2 Reference data and registers from UK officials
 
 Core web page - https://www.data.gov.uk/
 
@@ -32,11 +32,11 @@ Core web page - https://www.data.gov.uk/
 
 [Reference data on github](https://github.com/openregister/registers-data-archive/tree/master)
 
-## Reference data and registers from USA officials
+## 1.3 Reference data and registers from USA officials
 
 More than 200K datasets can be found [here](https://catalog.data.gov/dataset?q=&sort=views_recent+desc)
 
-## Mouse Genome DataSet - MGD
+## 1.4 Mouse Genome DataSet - MGD
 
 Large volume database with medical experiments data can be found [here](https://www.informatics.jax.org/software.shtml)
 
@@ -79,3 +79,21 @@ jobCount should be an integer, representing the number of subprocesses. If you h
 > CREATE ROLE mgd_public WITH PASSWORD ‘mgd_public’
 > pg_restore -c -d mgd -j 2 -O -U postgres mgd.postgres.dump -Fc
 > ```
+
+## 1.5 Postgres Flights Database
+
+https://postgrespro.com/community/demodb
+
+```
+You can use this database for various purposes, such as:
+learning SQL language on your own
+preparing books, manuals, and courses on SQL
+showing PostgreSQL features in stories and articles
+
+When developing this demo database, we pursued several goals:
+Database schema must be simple enough to be understood without extra explanations.
+At the same time, database schema must be complex enough to allow writing meaningful queries.
+The database must contain true-to-life data that will be interesting to work with.
+
+This demo database is distributed under the PostgreSQL license. Current version is 15.08.2017.
+```
