@@ -32,7 +32,7 @@ For the creation of the proper demo environment you may need to add the below li
 
 1. Reference data sets - [here](/Setup%20WKC%20demo%20environment/Reference%20data/Reference_Data.md)
 2. Governance rules and Policies
-3. Data Protenction rules
+3. Data Protection rules
 4. Business terms and Categories
 5. Platform connections
 6. Projects
