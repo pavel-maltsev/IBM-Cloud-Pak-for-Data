@@ -29,7 +29,7 @@ The IKC demo requires the following types of the assets to be used:
    - Data libraries for the AVI demo
    - ETL jobs for the AVI
 
-## Deploy the CP4D cluster
+## 2. Deploy the CP4D cluster
 
 There are several options on how that can be done
 The external to IBM users may create their own cluster in:
@@ -42,7 +42,9 @@ IBMers and Business Partners can use Techzone accounts to request Base Installat
 
 Currently the demo scenario is based on CP4D v4.8.2 and it may be updated later, so please select the latest available version on the page of Certified Base Images either with pre-deployed required list of services or provision them on your own
 
-## Provisioning the required list of services
+## 3. Provision required list of services
+
+Depending on the selected demo scenario you will require one or more CP4D services deployed on the platform. The required combination of those is listed in the table below.
 
 | Demo Block to Service Mapping   | Glossary | Data Profiling, MDI, MDE, Privacy | Lineage with Manta | ETL with DQ |
 | :------------------------------ | :------: | :-------------------------------: | :----------------: | :---------: |
@@ -50,8 +52,19 @@ Currently the demo scenario is based on CP4D v4.8.2 and it may be updated later,
 | IKC enableKnowledgeGraph: true  |    V     |                 V                 |         -          |      -      |
 | IKC enableDataQuality: true     |    -     |                 V                 |         -          |      V      |
 | IKC enableMANTA: true           |    -     |                 -                 |         V          |      -      |
-| DataStage Ent Plus              |    -     |    auto limited install by IKC    |         V          |      V      |
+| DataStage Ent Plus              |    -     |    limited auto install by IKC    |         V          |      V      |
 | Data Virtualization             |    -     |                 V                 |         -          |      -      |
 | Manta                           |    -     |                 -                 |         V          |      -      |
 
-## 2. Create the users/roles
+## 4. Create the users/roles
+
+The provisioning of CP4D always provides you the Admin user you may utilise right away. For some specific demo scenarios you would have to use more than one user account to demonstrate platform capabilities.
+
+Cases include:
+
+- Security on the Catalogs, Projects, Categories
+- Security on Platform connections
+- Data Masking/Data Privacy capabilites
+- Workflows demonstration
+
+If you plan to demonstrate those scenarios, use the IBM Cloud Pak for Data documentation to perform the proper setup of users, roles and permissions
