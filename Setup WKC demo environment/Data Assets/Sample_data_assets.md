@@ -3,7 +3,7 @@
 This chapter describes some of the demo assets which can be used to create demonstration scenarios for the topics of data connectivity, data virtualization, datastage, data lineage, etc.
 
 > [!Important]
-> Although the majority of the listed sources do not contain any restictions for the usage, please be aware that the data assets found in the internet may be the subject to copyrights and verification of asset usability for the specific use case is the responsibility of the specialist to setup the specific demo scenario.
+> Although the majority of the listed sources do not contain any restictions for the usage, please be aware that the data assets found in the internet may be the subject to copyrights and verification of asset usability for the specific use case is the responsibility of the specialists who setup the specific demo scenario.
 
 ## DVD Rental database - PostgreSQL
 
@@ -11,12 +11,12 @@ This database contains several tables, views, functions, etc which can be used t
 
 Content:
 
-    * 15 tables
-    * 1 trigger
-    * 7 views
-    * 8 functions
-    * 1 domain
-    * 13 sequences
+- 15 tables
+- 1 trigger
+- 7 views
+- 8 functions
+- 1 domain
+- 13 sequences
 
 The database detailed description including the ER Model, table descriptive information, import dumps are available by [THIS LINK](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/).
 
