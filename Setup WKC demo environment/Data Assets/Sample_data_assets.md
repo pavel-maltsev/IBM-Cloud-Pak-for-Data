@@ -84,6 +84,8 @@ jobCount should be an integer, representing the number of subprocesses. If you h
 
 https://postgrespro.com/community/demodb
 
+### Information from authors:
+
 ```
 You can use this database for various purposes, such as:
 learning SQL language on your own
@@ -97,3 +99,17 @@ The database must contain true-to-life data that will be interesting to work wit
 
 This demo database is distributed under the PostgreSQL license. Current version is 15.08.2017.
 ```
+
+### Installation
+
+The demo database is available at edu.postgrespro.com in three flavors, which differ only in the data size:
+
+[demo-small-en.zip](https://edu.postgrespro.com/demo-small-en.zip) (21 MB) — flight data for one month (DB size is about 300 MB)
+
+[demo-medium-en.zip](https://edu.postgrespro.com/demo-medium-en.zip) (62 MB) — flight data for three months (DB size is about 700 MB)
+
+[demo-big-en.zip](https://edu.postgrespro.com/demo-big-en.zip) (232 MB) — flight data for one year (DB size is about 2.5 GB)
+
+The small database is good for writing queries, and it will not take up much disk space. The large database can help you understand the query behavior on large data volumes and consider query optimization.
+
+The files include an SQL script that creates the demo database and fills it with data (virtually, it is a backup copy created with the pg_dump utility). The owner of the demo database will be the DBMS user who runs the script. For example, to create the small database, run the script as the user postgres by means of psql:
