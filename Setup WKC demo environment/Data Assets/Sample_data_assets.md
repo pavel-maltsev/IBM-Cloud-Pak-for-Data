@@ -3,7 +3,7 @@
 This chapter describes some of the demo assets which can be used to create demonstration scenarios for the topics of data connectivity, data virtualization, datastage, data lineage, etc.
 
 > [!Important]
-> Althought majority of the listed sources do not contain any restictions for the usage, please be aware that the data assets found in the internet may be the subject to copyrights and verification of asset usability for the specific use case is the responsibility of the specialist to setup the specific demo scenario.
+> Although the majority of the listed sources do not contain any restictions for the usage, please be aware that the data assets found in the internet may be the subject to copyrights and verification of asset usability for the specific use case is the responsibility of the specialist to setup the specific demo scenario.
 
 ## DVD Rental database - PostgreSQL
 
