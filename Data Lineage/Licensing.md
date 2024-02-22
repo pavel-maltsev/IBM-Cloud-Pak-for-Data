@@ -18,11 +18,11 @@ Before start using Manta add-on for IKC the license key file should be added. Th
 
 To deploy the license file the following steps should be done:
 
-1. use the link which you have for CP4D main UI, e.g.
+1. Use the link which you have for CP4D main UI, e.g.
 
 `https://xxxxx.cloud.techzone.ibm.com/zen/#/homepage`
 
-2. remove the section after the ibm.com and add there the url part for Manta Admin UI `cloud.techzone.ibm.com/manta-admin-gui/`
+2. Remove the section after the ibm.com and add there the url part for Manta Admin UI `cloud.techzone.ibm.com/manta-admin-gui/`
 
 3. In the Manta Admin UI follow to the section "Configuration" and then to the tab "License"
 
@@ -31,9 +31,11 @@ To deploy the license file the following steps should be done:
 4. Check the "Maximum number of scripts" vs "Currently used scripts" values
 
 5. Add the new license.key file if needed by pressing the "Upload new license" button
+
    ![alt text](/Data%20Lineage/images/manta-license_2.png)
 
 You may use either drag and drop or menu selection for this operation on the next screen
+
 ![alt text](/Data%20Lineage/images/manta-license_3.png)
 
 The updated number of scripts available should be now visible on the screen of Manta Admin GUI and also when perfroming MDI operation on the CP4D Project.
