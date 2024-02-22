@@ -113,3 +113,16 @@ The demo database is available at edu.postgrespro.com in three flavors, which di
 The small database is good for writing queries, and it will not take up much disk space. The large database can help you understand the query behavior on large data volumes and consider query optimization.
 
 The files include an SQL script that creates the demo database and fills it with data (virtually, it is a backup copy created with the pg_dump utility). The owner of the demo database will be the DBMS user who runs the script. For example, to create the small database, run the script as the user postgres by means of psql:
+
+### Industry Accelerators by IBM
+
+Industry Accelerators by IBM also provide some sample data and those may be found by [the link](https://accelerator.ca.analytics.ibm.com/bi/?perspective=authoring&pathRef=.public_folders%2FIBM%2BAccelerator%2BCatalog%2FIBM%2BAccelerator%2BCatalog&id=iF7884CDF92664BD0868E68D4D06AB5D0&objRef=iF7884CDF92664BD0868E68D4D06AB5D0&action=run&format=HTML&cmPropStr=%7B%22id%22%3A%22iF7884CDF92664BD0868E68D4D06AB5D0%22%2C%22type%22%3A%22report%22%2C%22defaultName%22%3A%22IBM%20Accelerator%20Catalog%22%2C%22permissions%22%3A%5B%22execute%22%2C%22read%22%2C%22traverse%22%5D%7D).
+
+Few samples which are included:
+
+- Automotive Industry Sample Data
+- Retail Industry Sample Data
+- Travel and Transportations Industry Samples Data
+- Profeccional Services Industry Sample Data
+
+and many more
