@@ -48,6 +48,7 @@ Manta license used on the environment should have about 100 of the "Unused scrip
 
 > [!TIP]
 > Generic information about the cluster and services deployment can be found [here](/Setup%20WKC%20demo%20environment/Pre-work.md)
+>
 > Use this [link to validate or update your Manta license](/Data%20Lineage/Licensing.md).
 
 ## 2.3 Environment setup
