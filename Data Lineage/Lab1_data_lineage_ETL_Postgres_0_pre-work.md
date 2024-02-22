@@ -12,6 +12,34 @@ Before starting the lab excersise please prepare 2 RDBMS data sources. Here we a
 
 I've used the DVD Rental Database described in section [Sample data assets](/Setup%20WKC%20demo%20environment/Data%20Assets/Sample_data_assets.md). The database has been deployed twice on different schemas to serve as the source and as a target for the pipelines lineage.
 
+On the database which is a planned Target 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.
+
+1. Table for Target connection of ETL. You may need to change schema name "public" to a different value.
+
+```
+CREATE TABLE public.full_address (
+	address_id int4 NOT NULL,
+	address varchar(50) NOT NULL,
+	address2 varchar(50) NULL,
+	district varchar(20) NOT NULL,
+	postal_code varchar(10) NULL,
+	city varchar(50) NOT NULL,
+	country varchar(50) NOT NULL,
+	full_address varchar(300) NOT NULL
+);
+```
+
+2. View for data summarization. That will extend the lineage flow diagram at the demo time.
+
+```
+CREATE OR REPLACE VIEW public.customer_and_address
+AS SELECT cu.customer_id AS id,
+    (cu.first_name::text || ' '::text) || cu.last_name::text AS name,
+    a.full_address
+   FROM my_customer cu
+     JOIN full_address a ON cu.address_id = a.address_id;
+```
+
 ## 2.2 Services used in the lab
 
 For successful lab execution CP4D instance should have IKC, Manta and DataStage Ent. services deployed
@@ -110,3 +138,7 @@ For the lab purposes you would need to have one Catalog and at least one Project
 
 > [!WARNING]
 > When working on the same environments, depending on the setup it may lead that several users working with the same databases but with different MDI procedures may result in getting in Manta repository duplicated entries which you will have later to resolve. Therefore it is strongly recommended that for this specific lab you would utilise your own database copies as separate Platfrom connections and your own DataStage ETL jobs named uniquely in your own Project. Advice for the multi-user lab facilitation is that all the assets created should be suffixed with underscore and user initials, e.g. \_XX
+
+### Create your Project
+
+Although the user you have created earlier has the permissions to create Projects, on this step we still will utilise the Admin user for this task
