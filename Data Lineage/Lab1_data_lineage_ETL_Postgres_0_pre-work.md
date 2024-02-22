@@ -47,7 +47,7 @@ For successful lab execution CP4D instance should have IKC, Manta and DataStage 
 Manta license used on the environment should have about 100 of the "Unused scripts" available for the lab.
 
 > [!TIP]
-> Generic information about the cluster and services deployment can be found [here](/Setup%20WKC%20demo%20environment/Pre-work.md)
+> Generic information about the cluster and services deployment can be found [here](/Setup%20WKC%20demo%20environment/Pre-work.md).
 >
 > Use this [link to validate or update your Manta license](/Data%20Lineage/Licensing.md).
 
@@ -146,6 +146,24 @@ For the lab purposes you would need to have one Catalog and at least one Project
 > [!WARNING]
 > When working on the same environments, depending on the setup it may lead that several users working with the same databases but with different MDI procedures may result in getting in Manta repository duplicated entries which you will have later to resolve. Therefore it is strongly recommended that for this specific lab you would utilise your own database copies as separate Platfrom connections and your own DataStage ETL jobs named uniquely in your own Project. Advice for the multi-user lab facilitation is that all the assets created should be suffixed with underscore and user initials, e.g. \_XX
 
-### Create your Project
+### Create your Catalog
 
-Although the user you have created earlier has the permissions to create Projects, on this step we still will utilise the Admin user for this task
+As the common practice, the Data Catalogs are defined on the level of the CDO office and not by specific Data Stewards. Therefore, using user Admin select CP4D main menu - Catalogs - All Catalogs
+
+![alt text](image.png)
+
+Use the "New catalog" button on the top-right side
+
+![alt text](image-1.png)
+
+Provide the name "Lineage Demo Catalog". There is no need to chagne other parameters this time.
+
+![alt text](image-2.png)
+
+Click "Create" at the bottom-right corner of the screen
+
+![alt text](image-3.png)
+
+On the screen of the newly created catalog select "Access Control" tab, where you will see that only Admin user is currently listed as the one administering it.
+
+![alt text](image-4.png)
