@@ -56,4 +56,50 @@ You will have now at least 2 users avaialble for this demo
 
 ### Create Platform Connections
 
-In this chapter the Platform connections are to be created for the source and sarget Postgres databases.
+In this chapter the Platform connections are to be created for the source and target Postgres databases.
+
+Follow the CP4D main menu - Data - Platform connections menu
+
+![alt text](/Data%20Lineage/images/pl_conn-0.png)
+
+On the right side click "New connection" button
+
+![alt text](/Data%20Lineage/images/pl_conn-1.png)
+
+The revealed screen form shows you the variety of connections available on the CP4D platform. Those can be created in a centralised way and then re-used in several activities. The top-right link to "Supported connection types" will provide you documentation on connectivity options and applicability of those for specific functional areas.
+
+Use the "Find connectors" line on top to search for "Postgre".
+
+![alt text](/Data%20Lineage/images/pl_conn-2.png)
+
+Click the one named PostgreSQL and then click Select.
+
+![alt text](/Data%20Lineage/images/pl_conn-3.png)
+
+Provide the Name "PostgreSQL_lineage_source" and other parameters for the database you've created on the earlier steps of the pre-work.
+
+When entering the Credentials data choose the radio button for "Credential setting" as "Shared"
+
+![alt text](/Data%20Lineage/images/pl_conn-4.png)
+
+When done, press "Test connection" on the top-right of the page
+
+![alt text](/Data%20Lineage/images/pl_conn-5.png)
+
+You should receive confirmation on successful results
+
+![alt text](/Data%20Lineage/images/pl_conn-6.png)
+
+Click "Create" and the bottom-right
+
+![alt text](/Data%20Lineage/images/pl_conn-7.png)
+
+Done with Source database connection for Lineage lab. Next please repeate the same steps to create the connection for the Target database
+
+Name the connection PostgreSQL_lineage_target and validate the connection works
+
+![alt text](/Data%20Lineage/images/pl_conn.png)
+
+Done with Target database connection creation. You should now see 2 available connections for PostgreSQL in the list of Platform connections
+
+![alt text](/Data%20Lineage/images/pl_conn.png)
