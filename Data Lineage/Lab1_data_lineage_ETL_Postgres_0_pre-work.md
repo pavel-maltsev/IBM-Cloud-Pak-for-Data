@@ -34,7 +34,7 @@ I will create John Lineage here
 
 ![alt text](/Data%20Lineage/images/user_create-2.png)
 
-For Platform assess select "Assign roles directly" and click Next
+For Platform access select "Assign roles directly" and click Next
 
 ![alt text](/Data%20Lineage/images/user_create-3.png)
 
@@ -96,10 +96,17 @@ Click "Create" and the bottom-right
 
 Done with Source database connection for Lineage lab. Next please repeate the same steps to create the connection for the Target database
 
-Name the connection PostgreSQL_lineage_target and validate the connection works
+Name the connection "PostgreSQL_lineage_target" and validate the connection works
 
 ![alt text](/Data%20Lineage/images/pl_conn-8.png)
 
 Done with Target database connection creation. You should now see 2 available connections for PostgreSQL in the list of Platform connections
 
 ![alt text](/Data%20Lineage/images/pl_conn-9.png)
+
+## 2.4 Creation of the Projects and Catalogs
+
+For the lab purposes you would need to have one Catalog and at least one Project.
+
+> [!WARNING]
+> When working on the same environments, depending on the setup it may lead that several users working with the same databases but with different MDI procedures may result in getting in Manta repository duplicated entries which you will have later to resolve. Therefore it is strongly recommended that for this specific lab you would utilise your own database copies as separate Platfrom connections and your own DataStage ETL jobs named uniquely in your own Project. Advice for the multi-user lab facilitation is that all the assets created should be suffixed with underscore and user initials, e.g. \_XX
