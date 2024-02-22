@@ -24,21 +24,36 @@ We would separate this demo scenario from the other topics and also demonstrate 
 
 For that we would need the different user to be created in CP4D main menu - Administration - Access Control
 
-![alt text](image.png)
+![alt text](/Data%20Lineage/images/user_create-0.png)
 
 Click "Add users" in the right-top corner
 
-![alt text](image-1.png)
+![alt text](/Data%20Lineage/images/user_create-1.png)
 
 I will create John Lineage here
 
-![alt text](image-2.png)
+![alt text](/Data%20Lineage/images/user_create-2.png)
 
 For Platform assess select "Assign roles directly" and click Next
-![alt text](image-3.png)
 
-![alt text](image-4.png)
+![alt text](/Data%20Lineage/images/user_create-3.png)
 
-Provide the user Role of Data Steward
+![alt text](/Data%20Lineage/images/user_create-4.png)
 
-![alt text](image-5.png)
+Provide the user Role of Data Steward and click Next again
+
+![alt text](/Data%20Lineage/images/user_create-5.png)
+
+![alt text](/Data%20Lineage/images/user_create-4.png)
+
+Browse the summary and click Add
+
+![alt text](/Data%20Lineage/images/user_create-6.png)
+
+You will have now at least 2 users avaialble for this demo
+
+![alt text](/Data%20Lineage/images/user_create-7.png)
+
+### Create Platform Connections
+
+In this chapter the Platform connections are to be created for the source and sarget Postgres databases.
