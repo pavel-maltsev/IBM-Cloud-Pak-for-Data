@@ -8,11 +8,11 @@ The lab will use 2 databases and 2 ETL jobs to demonstrate the value of data lin
 
 ## 2.1 Data sources
 
-Before starting the lab excersise please prepare 2 RDBMS data sources. Here we are to use the Postgres available databases deployed outside of CP4D cluster but which CP4D is able to natively connect to.
+Before starting the lab excersise please prepare 2 RDBMS data sources. Here we are to use the Postgres available databases deployed outside of CP4D cluster but which CP4D is able natively connect to.
 
 I've used the DVD Rental Database described in section [Sample data assets](/Setup%20WKC%20demo%20environment/Data%20Assets/Sample_data_assets.md). The database has been deployed twice on different schemas to serve as the source and as a target for the pipelines lineage.
 
-On the database which is a planned Target 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.
+On the database which is a planned as a Target, 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.
 
 1. Table for Target connection of ETL. You may need to change schema name "public" to a different value.
 
@@ -42,7 +42,13 @@ AS SELECT cu.customer_id AS id,
 
 ## 2.2 Services used in the lab
 
-For successful lab execution CP4D instance should have IKC, Manta and DataStage Ent. services deployed
+For successful lab execution CP4D instance should have IKC, Manta and DataStage Ent. services deployed.
+
+Manta license used on the environment should have about 100 of the "Unused scripts" available for the lab.
+
+> [!TIP]
+> Generic information about the cluster and services deployment can be found [here](/Setup%20WKC%20demo%20environment/Pre-work.md)
+> Use this [link to validate or update your Manta license](/Data%20Lineage/Licensing.md).
 
 ## 2.3 Environment setup
 
