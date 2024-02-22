@@ -98,8 +98,8 @@ Done with Source database connection for Lineage lab. Next please repeate the sa
 
 Name the connection PostgreSQL_lineage_target and validate the connection works
 
-![alt text](/Data%20Lineage/images/pl_conn.png)
+![alt text](/Data%20Lineage/images/pl_conn-8.png)
 
 Done with Target database connection creation. You should now see 2 available connections for PostgreSQL in the list of Platform connections
 
-![alt text](/Data%20Lineage/images/pl_conn.png)
+![alt text](/Data%20Lineage/images/pl_conn-9.png)
