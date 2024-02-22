@@ -1,4 +1,4 @@
-# 1 Demo Assets with sample data
+# 1. Demo Assets with sample data
 
 This chapter describes some of the demo assets which can be used to create demonstration scenarios for the topics of data connectivity, data virtualization, datastage, data lineage, etc.
 
@@ -134,4 +134,4 @@ psql -f demo_small_YYYYMMDD.sql -U postgres
 ```
 
 > [!NOTE]
-> Keep in mind that if the demo database already exists, it will be deleted and recreated!
+> Keep in mind that as per script algorithm, if the demo database already exists, it will be deleted and recreated!
