@@ -16,7 +16,7 @@ On the database which is a planned Target 2 assets have to be created on top of 
 
 1. Table for Target connection of ETL. You may need to change schema name "public" to a different value.
 
-```
+```sql
 CREATE TABLE public.full_address (
 	address_id int4 NOT NULL,
 	address varchar(50) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE public.full_address (
 
 2. View for data summarization. That will extend the lineage flow diagram at the demo time.
 
-```
+```sql
 CREATE OR REPLACE VIEW public.customer_and_address
 AS SELECT cu.customer_id AS id,
     (cu.first_name::text || ' '::text) || cu.last_name::text AS name,
