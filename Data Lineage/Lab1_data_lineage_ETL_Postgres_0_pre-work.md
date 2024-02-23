@@ -165,3 +165,22 @@ Click "Create" at the bottom-right corner of the screen
 ![alt text](image-3.png)
 
 On the screen of the newly created catalog select "Access Control" tab, where you will see that only Admin user is currently listed as the one administering it.
+
+![alt text](image-4.png)
+
+Click "Add collaborators" then "Add user" button
+
+![alt text](image-5.png)
+
+In the pop-up window select Role: Adming and start typing "lineage" on the line below until your user will appear on the screen
+
+![alt text](image-6.png)
+
+Click "Add". You will now see 2 users in you catalog, both with Admin Role
+
+![alt text](image-7.png)
+
+Click the top-right corner button and Log out of the system, then log in as your user (John Lineage in this demo).
+
+> [!CAUTION]
+> All the rest steps should now be done under your personal user account.
