@@ -99,7 +99,7 @@ In the screen, use available PostgreSQL_lineage_source connection to find in you
 
 ![alt text](/Data%20Lineage/images/mdi_data-8.png)
 
-When correctponding checkboxes are selected, press Select button.
+When corresponding checkboxes are selected, press Select button.
 
 ![alt text](/Data%20Lineage/images/mdi_data-9.png)
 
@@ -131,9 +131,9 @@ Wait until it's complete and the confirmation message in green will pop-up.
 
 The PostgreSQL source database assets have been succesfully imported into the Project.
 
-Now please repeate the same metadata import operation for the assets of your PostgreSQL target database.
+Now repeat the same metadata import operation for the assets of your PostgreSQL Target database.
 
-Name your metadata import "mdi_PostgreSQL_Target" and import to the Project 2 tables from your target connection:
+Name your metadata import "mdi_PostgreSQL_Target" and import 2 named below tables from your target connection to the Project:
 
 - my_customer
 - full_address
