@@ -185,6 +185,8 @@ Click the top-right corner button and Log out of the system, then log in as your
 > [!CAUTION]
 > All the rest steps should now be done under your personal user account.
 
+### Create your Project
+
 Open CP4D main menu - Projects - All projects
 
 ![alt text](/Data%20Lineage/images/containter_creation-8.png)
