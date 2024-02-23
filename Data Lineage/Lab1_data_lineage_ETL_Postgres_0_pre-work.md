@@ -158,6 +158,8 @@ Use the "New catalog" button on the top-right side
 
 ![alt text](image-5.png)
 
+![alt text](image-6.png)
+
 Provide the name "Lineage Demo Catalog". There is no need to chagne other parameters this time.
 
 ![alt text](image-2.png)
