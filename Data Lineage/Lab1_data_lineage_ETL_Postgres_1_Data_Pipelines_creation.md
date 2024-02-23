@@ -146,6 +146,8 @@ Finish the Metadata import process to see 4 imported data assets in the Asset ta
 
 ## 4.1 Customer data migration
 
+First created DataStage flow will be the simpliest one and will 1:1 migrate the existing data from Customer table on the source to My_customer table of the target.
+
 From the Asset tab of the Lineage Project click the top-right New asset button. Scroll down the page and select "DataStage" tile in the section of "Graphical Builders"
 
 ![alt text](/Data%20Lineage/images/dsx_customer-0.png)
@@ -205,3 +207,168 @@ Customer data has now reached the target. You may browse the data on the final l
 ![alt text](/Data%20Lineage/images/dsx_customer-11.png)
 
 Congratulations! You have just successfully created your first data transformation pipeline using DataStage!
+
+## 4.2 Address information transformation and migration
+
+The DataStage flow we design for the address data would contain slightly more complex data flows from 3 source tables (address, city, country) to single table of full_address. Few operations between the source and target are only needed to visualise later on the capabilities of Manta to show the complete tranformation procedure consisting of several steps.
+
+> [!NOTE]
+> Below instruction is provided as a high level, providing detalisation only on the steps not covered with the Custemer migration scenario in previous section.
+
+Create a new DataStage asset with the name "dsx_Migrate_Full_Address".
+
+![alt text](/Data%20Lineage/images/dsx_address-0.png)
+
+From Asset browser in the palette select 4 tables for this scenario:
+
+- address
+- city
+- country
+- full_address
+
+![alt text](/Data%20Lineage/images/dsx_address-1.png)
+
+Add those to the canvas and move to positions similar as shown on screenshot
+
+![alt text](/Data%20Lineage/images/dsx_address-2.png)
+
+Bring few more stages from palette - Stages section. Those are Join, Merge, Transformer. Connect those with links as shown on the screenshot.
+
+![alt text](/Data%20Lineage/images/dsx_address-3.png)
+
+To be able to select the proper join and merge keys we have to make sure the data types on the input links for those key attributes are of the same type. Currently on the source database those differ and are either of type `INTEGER` or type `SMALLINT`. We don't have to change the data source tables metadata to fix the issue. We may use the connector metadata change instead.
+
+Double-click "address_1" stage and select the Output tab - Columns - Edit button
+
+![alt text](/Data%20Lineage/images/dsx_address-4.png)
+
+Change the Data type for the "City_id" column from `SMALLINT` to `INTEGER`
+
+![alt text](/Data%20Lineage/images/dsx_address-5.png)
+
+Click "Apply and return"
+
+![alt text](/Data%20Lineage/images/dsx_address-6.png)
+
+Click "Save" at the stage level (bottom-right)
+
+![alt text](/Data%20Lineage/images/dsx_address-7.png)
+
+Double-click "city_1" stage and select the Output tab - Columns - Edit button
+
+![alt text](/Data%20Lineage/images/dsx_address-8.png)
+
+Change the Data type for the country_id column from `SMALLINT` to `INTEGER`
+
+![alt text](/Data%20Lineage/images/dsx_address-9.png)
+
+Click "Apply and return"
+
+![alt text](/Data%20Lineage/images/dsx_address-6.png)
+
+Click "Save" at the stage level (bottom-right)
+
+![alt text](/Data%20Lineage/images/dsx_address-7.png)
+
+Double-click Join stage and on the "Stage" tab select "Add key" button
+
+![alt text](/Data%20Lineage/images/dsx_address-10.png)
+
+You will see the new screen with empty list. Add the new Join key by pressing "Add key" button on top-right corner of the window.
+
+![alt text](/Data%20Lineage/images/dsx_address-11.png)
+
+On the Key window select "city_id" as the join Key
+
+![alt text](/Data%20Lineage/images/dsx_address-12.png)
+
+Press "Apply"
+
+![alt text](/Data%20Lineage/images/dsx_address-13.png)
+
+Now the Join keys list contains one record
+
+![alt text](/Data%20Lineage/images/dsx_address-14.png)
+
+Press "Apply and return" button
+
+![alt text](/Data%20Lineage/images/dsx_address-15.png)
+
+Don't forget to click "Save" button on the Join stage details window (bottom-right corner)
+
+![alt text](/Data%20Lineage/images/dsx_address-16.png)
+
+Double-click "Merge_1" stage and on the "Stage" tab select "Add key" button
+
+![alt text](/Data%20Lineage/images/dsx_address-17.png)
+
+Press "Add key" on the top-right corner of the new window and in the Key dropdown list select "country_id"
+
+![alt text](/Data%20Lineage/images/dsx_address-18.png)
+
+Press "Apply"
+
+![alt text](/Data%20Lineage/images/dsx_address-13.png)
+
+Now the Merge keys list contains one record and by default has the Sort order as Ascending
+
+![alt text](/Data%20Lineage/images/dsx_address-19.png)
+
+Press "Apply and return" button
+
+![alt text](/Data%20Lineage/images/dsx_address-15.png)
+
+Don't forget to click "Save" button on the Merge stage details window (bottom-right corner)
+
+![alt text](/Data%20Lineage/images/dsx_address-16.png)
+
+Next let's modify Transformer_1 stage. Double-click it and on the new window switch to the Output tab
+
+![alt text](/Data%20Lineage/images/dsx_address-20.png)
+
+In the output section of the screen click "Add column"
+
+![alt text](/Data%20Lineage/images/dsx_address-21.png)
+
+It will bring the new COLUMN_1 column to the list. You may need to scroll down to see it.
+
+![alt text](/Data%20Lineage/images/dsx_address-22.png)
+
+Use the pencil icon next to it to rename it to "full_address"
+
+![alt text](/Data%20Lineage/images/dsx_address-23.png)
+
+Change the Data type for full_address column to Varchar(300)
+
+Build the Expression for this column by clicking the pencil icon next to it and filling in the derivation
+
+```
+Link_7.address : "|" : Link_7.city : "|" : Link_7.district : "|" : Link_7.country : "|" : Link_7.postal_code
+```
+
+![alt text](/Data%20Lineage/images/dsx_address-24.png)
+
+Click "Aplly and return"
+
+On the Output section of the Transformer screen select checkboxes next to the attributes not present in the target schema:
+
+- city_id
+- country_id
+- phone
+- last_update
+
+After you select those the screen will show the blue menu line with trashbin. Press the trashbin to remove selected attributes from the transformer output.
+
+![alt text](/Data%20Lineage/images/dsx_address-27.png)
+
+then click "Save and return" on the next screen
+
+![alt text](/Data%20Lineage/images/dsx_address-25.png)
+
+In the top menu "Save" the DataStage flow, then "Compile" and "Run" it.
+
+You should see the job execution results as following
+
+![alt text](/Data%20Lineage/images/dsx_address-26.png)
+
+Congratulations! You have successfully created your second data transformation pipeline in this lab!
