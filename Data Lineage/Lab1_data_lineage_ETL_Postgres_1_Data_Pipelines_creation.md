@@ -372,3 +372,7 @@ You should see the job execution results as following
 ![alt text](/Data%20Lineage/images/dsx_address-26.png)
 
 Congratulations! You have successfully created your second data transformation pipeline in this lab!
+
+This concludes the Step 1 - Data Pipelines creation scenario
+
+You may now proceed with [Step 2 - Lineage metadata import](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_2_Lineage_metadata_import.md).

@@ -217,4 +217,4 @@ Click "Next", now you can see both users in the list of collaborators on this pr
 
 This concludes the Step 0 - Pre-work for the Data lineage lab
 
-You may now proceed with [Step 1 - Data Pipelines creation scenario](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_1_Data_Pipelines_creation.md)
+You may now proceed with [Step 1 - Data Pipelines creation scenario](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_1_Data_Pipelines_creation.md).
