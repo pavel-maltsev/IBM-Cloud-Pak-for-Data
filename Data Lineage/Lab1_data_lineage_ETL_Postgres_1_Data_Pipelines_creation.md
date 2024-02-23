@@ -15,13 +15,13 @@ Previously you have already deployed external PostgreSQL databases and created P
 
 Login to CP4D under your John Lineage user and open the "Lineage Project" you have previously created.
 
-On the Assets tab click the New asset button
+On the Assets tab click the New asset button.
 
 ![alt text](/Data%20Lineage/images/con-import-0.png)
 
 ![alt text](/Data%20Lineage/images/con-import-1.png)
 
-In the "Data access tools" section select "Connection"
+In the "Data access tools" section select "Connection".
 
 ![alt text](/Data%20Lineage/images/con-import-2.png)
 
@@ -45,7 +45,7 @@ Click "Create" button to import this connection to your Project.
 
 Perform the steps above to also import "PostgreSQL_lineage_target" connection.
 
-You should now see 2 connection assets in your project
+You should now see 2 connection assets in your project:
 
 ![alt text](/Data%20Lineage/images/con-import-7.png)
 
@@ -64,7 +64,7 @@ We will use this method to add the source and target tables for DataStage pipeli
 When in the "Lineage Project" screen and Asset tab, select the New Asset button on the top-right of the page.
 ![alt text](/Data%20Lineage/images/mdi_data-1.png)
 
-Click Metadata Import tile in the Data access tools section
+Click Metadata Import tile in the Data access tools section.
 
 ![alt text](/Data%20Lineage/images/mdi_data-2.png)
 
@@ -78,7 +78,7 @@ When asked for Details, provide the "mdi_PostgreSQL_Source" as the name of the m
 
 ![alt text](/Data%20Lineage/images/mdi_data-4.png)
 
-Click "Next"
+Click "Next".
 
 ![alt text](/Data%20Lineage/images/mdi_data-5.png)
 
@@ -103,7 +103,7 @@ When corresponding checkboxes are selected, press Select button.
 
 ![alt text](/Data%20Lineage/images/mdi_data-9.png)
 
-On the next screen you can validate the selected list and press Next button
+On the next screen you can validate the selected list and press Next button.
 
 ![alt text](/Data%20Lineage/images/mdi_data-10.png)
 
@@ -148,7 +148,7 @@ Finish the Metadata import process to see 4 imported data assets in the Asset ta
 
 First created DataStage flow will be the simpliest one and will 1:1 migrate the existing data from Customer table on the source to My_customer table of the target.
 
-From the Asset tab of the Lineage Project click the top-right New asset button. Scroll down the page and select "DataStage" tile in the section of "Graphical Builders"
+From the Asset tab of the Lineage Project click the top-right New asset button. Scroll down the page and select "DataStage" tile in the section of "Graphical Builders".
 
 ![alt text](/Data%20Lineage/images/dsx_customer-0.png)
 
@@ -173,11 +173,11 @@ Click Add button to import those data assets to the Canvas.
 
 Even if the data assets of different types are stored together and can be selected from the same list, after import to the canvas they would receive the propper icons of their type, in our case that is for PostgreSQL.
 
-Use the Pencil icon near the name of the asset to rename it to better recognise on the canvas
+Use the Pencil icon near the name of the asset to rename it to better recognise on the canvas.
 
 ![alt text](/Data%20Lineage/images/dsx_customer-4.png)
 
-Lets name those "customer_Source" and "customer_Target"
+Lets name those "customer_Source" and "customer_Target".
 
 ![alt text](/Data%20Lineage/images/dsx_customer-5.png)
 
@@ -196,7 +196,7 @@ Now, as you saved the Stage changes, you may Save, Compile and then Run the Data
 
 ![alt text](/Data%20Lineage/images/dsx_customer-8.png)
 
-When job run is complete you will see the confirmation on the number of rows processed directly on the links
+When job run is complete you will see the confirmation on the number of rows processed directly on the links.
 
 ![alt text](/Data%20Lineage/images/dsx_customer-9.png)
 
@@ -228,7 +228,7 @@ From Asset browser in the palette select 4 tables for this scenario:
 
 ![alt text](/Data%20Lineage/images/dsx_address-1.png)
 
-Add those to the canvas and move to positions similar as shown on screenshot
+Add those to the canvas and move to positions similar as shown on screenshot.
 
 ![alt text](/Data%20Lineage/images/dsx_address-2.png)
 
@@ -238,39 +238,39 @@ Bring few more stages from palette - Stages section. Those are Join, Merge, Tran
 
 To be able to select the proper join and merge keys we have to make sure the data types on the input links for those key attributes are of the same type. Currently on the source database those differ and are either of type `INTEGER` or type `SMALLINT`. We don't have to change the data source tables metadata to fix the issue. We may use the connector metadata change instead.
 
-Double-click "address_1" stage and select the Output tab - Columns - Edit button
+Double-click "address_1" stage and select the Output tab - Columns - Edit button.
 
 ![alt text](/Data%20Lineage/images/dsx_address-4.png)
 
-Change the Data type for the "City_id" column from `SMALLINT` to `INTEGER`
+Change the Data type for the "City_id" column from `SMALLINT` to `INTEGER`.
 
 ![alt text](/Data%20Lineage/images/dsx_address-5.png)
 
-Click "Apply and return"
+Click "Apply and return".
 
 ![alt text](/Data%20Lineage/images/dsx_address-6.png)
 
-Click "Save" at the stage level (bottom-right)
+Click "Save" at the stage level (bottom-right).
 
 ![alt text](/Data%20Lineage/images/dsx_address-7.png)
 
-Double-click "city_1" stage and select the Output tab - Columns - Edit button
+Double-click "city_1" stage and select the Output tab - Columns - Edit button.
 
 ![alt text](/Data%20Lineage/images/dsx_address-8.png)
 
-Change the Data type for the country_id column from `SMALLINT` to `INTEGER`
+Change the Data type for the country_id column from `SMALLINT` to `INTEGER`.
 
 ![alt text](/Data%20Lineage/images/dsx_address-9.png)
 
-Click "Apply and return"
+Click "Apply and return".
 
 ![alt text](/Data%20Lineage/images/dsx_address-6.png)
 
-Click "Save" at the stage level (bottom-right)
+Click "Save" at the stage level (bottom-right).
 
 ![alt text](/Data%20Lineage/images/dsx_address-7.png)
 
-Double-click Join stage and on the "Stage" tab select "Add key" button
+Double-click Join stage and on the "Stage" tab select "Add key" button.
 
 ![alt text](/Data%20Lineage/images/dsx_address-10.png)
 
@@ -278,51 +278,51 @@ You will see the new screen with empty list. Add the new Join key by pressing "A
 
 ![alt text](/Data%20Lineage/images/dsx_address-11.png)
 
-On the Key window select "city_id" as the join Key
+On the Key window select "city_id" as the join Key.
 
 ![alt text](/Data%20Lineage/images/dsx_address-12.png)
 
-Press "Apply"
+Press "Apply".
 
 ![alt text](/Data%20Lineage/images/dsx_address-13.png)
 
-Now the Join keys list contains one record
+Now the Join keys list contains one record.
 
 ![alt text](/Data%20Lineage/images/dsx_address-14.png)
 
-Press "Apply and return" button
+Press "Apply and return" button.
 
 ![alt text](/Data%20Lineage/images/dsx_address-15.png)
 
-Don't forget to click "Save" button on the Join stage details window (bottom-right corner)
+Don't forget to click "Save" button on the Join stage details window (bottom-right corner).
 
 ![alt text](/Data%20Lineage/images/dsx_address-16.png)
 
-Double-click "Merge_1" stage and on the "Stage" tab select "Add key" button
+Double-click "Merge_1" stage and on the "Stage" tab select "Add key" button.
 
 ![alt text](/Data%20Lineage/images/dsx_address-17.png)
 
-Press "Add key" on the top-right corner of the new window and in the Key dropdown list select "country_id"
+Press "Add key" on the top-right corner of the new window and in the Key dropdown list select "country_id".
 
 ![alt text](/Data%20Lineage/images/dsx_address-18.png)
 
-Press "Apply"
+Press "Apply".
 
 ![alt text](/Data%20Lineage/images/dsx_address-13.png)
 
-Now the Merge keys list contains one record and by default has the Sort order as Ascending
+Now the Merge keys list contains one record and by default has the Sort order as Ascending.
 
 ![alt text](/Data%20Lineage/images/dsx_address-19.png)
 
-Press "Apply and return" button
+Press "Apply and return" button.
 
 ![alt text](/Data%20Lineage/images/dsx_address-15.png)
 
-Don't forget to click "Save" button on the Merge stage details window (bottom-right corner)
+Don't forget to click "Save" button on the Merge stage details window (bottom-right corner).
 
 ![alt text](/Data%20Lineage/images/dsx_address-16.png)
 
-Next let's modify Transformer_1 stage. Double-click it and on the new window switch to the Output tab
+Next let's modify Transformer_1 stage. Double-click it and on the new window switch to the Output tab.
 
 ![alt text](/Data%20Lineage/images/dsx_address-20.png)
 
@@ -334,13 +334,13 @@ It will bring the new COLUMN_1 column to the list. You may need to scroll down t
 
 ![alt text](/Data%20Lineage/images/dsx_address-22.png)
 
-Use the pencil icon next to it to rename it to "full_address"
+Use the pencil icon next to it to rename it to "full_address".
 
 ![alt text](/Data%20Lineage/images/dsx_address-23.png)
 
-Change the Data type for full_address column to Varchar(300)
+Change the Data type for full_address column to Varchar(300).
 
-Build the Expression for this column by clicking the pencil icon next to it and filling in the derivation
+Build the Expression for this column by clicking the pencil icon next to it and filling in the derivation:
 
 ```
 Link_7.address : "|" : Link_7.city : "|" : Link_7.district : "|" : Link_7.country : "|" : Link_7.postal_code
@@ -348,7 +348,7 @@ Link_7.address : "|" : Link_7.city : "|" : Link_7.district : "|" : Link_7.countr
 
 ![alt text](/Data%20Lineage/images/dsx_address-24.png)
 
-Click "Aplly and return"
+Click "Aplly and return".
 
 On the Output section of the Transformer screen select checkboxes next to the attributes not present in the target schema:
 
@@ -357,22 +357,22 @@ On the Output section of the Transformer screen select checkboxes next to the at
 - phone
 - last_update
 
-After you select those the screen will show the blue menu line with trashbin. Press the trashbin to remove selected attributes from the transformer output.
+After you select those the screen will show the blue menu line with trash bin. Press the trash bin to remove selected attributes from the transformer output.
 
 ![alt text](/Data%20Lineage/images/dsx_address-27.png)
 
-then click "Save and return" on the next screen
+then click "Save and return" on the next screen.
 
 ![alt text](/Data%20Lineage/images/dsx_address-25.png)
 
 In the top menu "Save" the DataStage flow, then "Compile" and "Run" it.
 
-You should see the job execution results as following
+You should see the job execution results as following:
 
 ![alt text](/Data%20Lineage/images/dsx_address-26.png)
 
 Congratulations! You have successfully created your second data transformation pipeline in this lab!
 
-This concludes the Step 1 - Data Pipelines creation scenario
+This concludes the Step 1 - Data Pipelines creation scenario.
 
 You may now proceed with [Step 2 - Lineage metadata import](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_2_Lineage_metadata_import.md).

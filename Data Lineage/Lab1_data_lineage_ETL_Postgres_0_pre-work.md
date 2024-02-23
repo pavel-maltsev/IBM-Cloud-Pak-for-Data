@@ -70,37 +70,37 @@ Manta license used on the environment should have about 100 of the "Unused scrip
 
 ### User creation
 
-We would separate this demo scenario from the other topics and also demonstrate how the Connectors can be freely shared by the authorised user with other Data Stewards
+We would separate this demo scenario from the other topics and also demonstrate how the Connectors can be freely shared by the authorised user with other Data Stewards.
 
-For that we would need the different user to be created in CP4D main menu - Administration - Access Control
+For that we would need the different user to be created in CP4D main menu - Administration - Access Control.
 
 ![alt text](/Data%20Lineage/images/user_create-0.png)
 
-Click "Add users" in the right-top corner
+Click "Add users" in the right-top corner.
 
 ![alt text](/Data%20Lineage/images/user_create-1.png)
 
-I will create John Lineage here
+I will create John Lineage here.
 
 ![alt text](/Data%20Lineage/images/user_create-2.png)
 
-For Platform access select "Assign roles directly" and click Next
+For Platform access select "Assign roles directly" and click Next.
 
 ![alt text](/Data%20Lineage/images/user_create-3.png)
 
 ![alt text](/Data%20Lineage/images/user_create-4.png)
 
-Provide the user Role of Data Steward and click Next again
+Provide the user Role of Data Steward and click Next again.
 
 ![alt text](/Data%20Lineage/images/user_create-5.png)
 
 ![alt text](/Data%20Lineage/images/user_create-4.png)
 
-Browse the summary and click Add
+Browse the summary and click Add.
 
 ![alt text](/Data%20Lineage/images/user_create-6.png)
 
-You will have now at least 2 users avaialble for this demo
+You will have now at least 2 users avaialble for this demo.
 
 ![alt text](/Data%20Lineage/images/user_create-7.png)
 
@@ -108,7 +108,7 @@ You will have now at least 2 users avaialble for this demo
 
 In this chapter the Platform connections are to be created for the source and target Postgres databases.
 
-Follow the CP4D main menu - Data - Platform connections menu
+Follow the CP4D main menu - Data - Platform connections menu.
 
 ![alt text](/Data%20Lineage/images/pl_conn-0.png)
 
@@ -128,29 +128,29 @@ Click the one named PostgreSQL and then click Select.
 
 Provide the Name "PostgreSQL_lineage_source" and other parameters for the database you've created on the earlier steps of the pre-work.
 
-When entering the Credentials data choose the radio button for "Credential setting" as "Shared"
+When entering the Credentials data choose the radio button for "Credential setting" as "Shared".
 
 ![alt text](/Data%20Lineage/images/pl_conn-4.png)
 
-When done, press "Test connection" on the top-right of the page
+When done, press "Test connection" on the top-right of the page.
 
 ![alt text](/Data%20Lineage/images/pl_conn-5.png)
 
-You should receive confirmation on successful results
+You should receive confirmation on successful results.
 
 ![alt text](/Data%20Lineage/images/pl_conn-6.png)
 
-Click "Create" and the bottom-right
+Click "Create" and the bottom-right.
 
 ![alt text](/Data%20Lineage/images/pl_conn-7.png)
 
-Done with Source database connection for Lineage lab. Next please repeate the same steps to create the connection for the Target database
+Done with Source database connection for Lineage lab. Next please repeate the same steps to create the connection for the Target database.
 
-Name the connection "PostgreSQL_lineage_target" and validate the connection works
+Name the connection "PostgreSQL_lineage_target" and validate the connection works.
 
 ![alt text](/Data%20Lineage/images/pl_conn-8.png)
 
-Done with Target database connection creation. You should now see 2 available connections for PostgreSQL in the list of Platform connections
+Done with Target database connection creation. You should now see 2 available connections for PostgreSQL in the list of Platform connections:
 
 ![alt text](/Data%20Lineage/images/pl_conn-9.png)
 
@@ -163,11 +163,11 @@ For the lab purposes you would need to have one Catalog and at least one Project
 
 ### Create your Catalog
 
-As the common practice, the Data Catalogs are defined on the level of the CDO office and not by specific Data Stewards. Therefore, using user Admin select CP4D main menu - Catalogs - All Catalogs
+As the common practice, the Data Catalogs are defined on the level of the CDO office and not by specific Data Stewards. Therefore, using user Admin select CP4D main menu - Catalogs - All Catalogs.
 
 ![alt text](/Data%20Lineage/images/containter_creation-0.png)
 
-Use the "New catalog" button on the top-right side
+Use the "New catalog" button on the top-right side.
 
 ![alt text](/Data%20Lineage/images/containter_creation-1.png)
 
@@ -175,7 +175,7 @@ Provide the name "Lineage Demo Catalog". There is no need to chagne other parame
 
 ![alt text](/Data%20Lineage/images/containter_creation-2.png)
 
-Click "Create" at the bottom-right corner of the screen
+Click "Create" at the bottom-right corner of the screen.
 
 ![alt text](/Data%20Lineage/images/containter_creation-3.png)
 
@@ -183,15 +183,15 @@ On the screen of the newly created catalog select "Access Control" tab, where yo
 
 ![alt text](/Data%20Lineage/images/containter_creation-4.png)
 
-Click "Add collaborators" then "Add user" button
+Click "Add collaborators" then "Add user" button.
 
 ![alt text](/Data%20Lineage/images/containter_creation-5.png)
 
-In the pop-up window select Role: Adming and start typing "lineage" on the line below until your user will appear on the screen
+In the pop-up window select Role: Adming and start typing "lineage" on the line below until your user will appear on the screen:
 
 ![alt text](/Data%20Lineage/images/containter_creation-6.png)
 
-Click "Add". You will now see 2 users in you catalog, both with Admin Role
+Click "Add". You will now see 2 users in you catalog, both with Admin Role.
 
 ![alt text](/Data%20Lineage/images/containter_creation-7.png)
 
@@ -202,11 +202,11 @@ Click the top-right corner button and Log out of the system, then log in as your
 
 ### Create your Project
 
-Open CP4D main menu - Projects - All projects
+Open CP4D main menu - Projects - All projects.
 
 ![alt text](/Data%20Lineage/images/containter_creation-8.png)
 
-Click "New project" button in the top-right corner
+Click "New project" button in the top-right corner.
 
 ![alt text](/Data%20Lineage/images/containter_creation-9.png)
 
@@ -214,7 +214,7 @@ Select the first option "Create an empty project". On the next screen provide th
 
 ![alt text](/Data%20Lineage/images/containter_creation-10.png)
 
-Click "Create" button
+Click "Create" button.
 
 ![alt text](/Data%20Lineage/images/containter_creation-11.png)
 
@@ -230,6 +230,6 @@ Select "Add collaborators - Add users" button. In the new window start typing "a
 
 Click "Next", now you can see both users in the list of collaborators on this project with their roles defined.
 
-This concludes the Step 0 - Pre-work for the Data lineage lab
+This concludes the Step 0 - Pre-work for the Data lineage lab.
 
 You may now proceed with [Step 1 - Data Pipelines creation scenario](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_1_Data_Pipelines_creation.md).
