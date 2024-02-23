@@ -156,10 +156,6 @@ Use the "New catalog" button on the top-right side
 
 ![alt text](image-1.png)
 
-![alt text](image-5.png)
-
-![alt text](image-6.png)
-
 Provide the name "Lineage Demo Catalog". There is no need to chagne other parameters this time.
 
 ![alt text](image-2.png)
@@ -169,5 +165,3 @@ Click "Create" at the bottom-right corner of the screen
 ![alt text](image-3.png)
 
 On the screen of the newly created catalog select "Access Control" tab, where you will see that only Admin user is currently listed as the one administering it.
-
-![alt text](image-4.png)
