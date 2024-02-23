@@ -51,8 +51,11 @@ You should now see 2 connection assets in your project:
 
 > [!NOTE]
 > As it has been discribed in pre-work document, above was the demonstration of the re-usability of the Shared Platorm connections by all premitted Data Stewards.
+>
 > CP4D platform removed the need of presonalised user accounts to be created in every specific data source for each of the users. Instead, the connection can be created only once, maintained centrally and re-used by the various users, working on their own projects.
+>
 > Security on the connector credentials is managed using the parameters on the Platform connection itself which specifies if credentials can be shared or not for the users who are not the owners of that connection.
+>
 > As alternative to this, if the Platform connection has been published to the Catalog, then the owner of the catalog may decide if the connection can be imported to specific Project by Data Steward's request or not.
 
 ## 3.2 Perform Metadata Import for the data assets
