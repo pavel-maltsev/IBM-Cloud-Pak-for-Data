@@ -150,37 +150,69 @@ For the lab purposes you would need to have one Catalog and at least one Project
 
 As the common practice, the Data Catalogs are defined on the level of the CDO office and not by specific Data Stewards. Therefore, using user Admin select CP4D main menu - Catalogs - All Catalogs
 
-![alt text](image.png)
+![alt text](containter_creation-0.png)
 
 Use the "New catalog" button on the top-right side
 
-![alt text](image-1.png)
+![alt text](containter_creation-1.png)
 
 Provide the name "Lineage Demo Catalog". There is no need to chagne other parameters this time.
 
-![alt text](image-2.png)
+![alt text](containter_creation-2.png)
 
 Click "Create" at the bottom-right corner of the screen
 
-![alt text](image-3.png)
+![alt text](containter_creation-3.png)
 
 On the screen of the newly created catalog select "Access Control" tab, where you will see that only Admin user is currently listed as the one administering it.
 
-![alt text](image-4.png)
+![alt text](containter_creation-4.png)
 
 Click "Add collaborators" then "Add user" button
 
-![alt text](image-5.png)
+![alt text](containter_creation-5.png)
 
 In the pop-up window select Role: Adming and start typing "lineage" on the line below until your user will appear on the screen
 
-![alt text](image-6.png)
+![alt text](containter_creation-6.png)
 
 Click "Add". You will now see 2 users in you catalog, both with Admin Role
 
-![alt text](image-7.png)
+![alt text](containter_creation-7.png)
 
 Click the top-right corner button and Log out of the system, then log in as your user (John Lineage in this demo).
 
 > [!CAUTION]
 > All the rest steps should now be done under your personal user account.
+
+Open CP4D main menu - Projects - All projects
+
+![alt text](containter_creation-8.png)
+
+Click "New project" button in the top-right corner
+
+![alt text](containter_creation-9.png)
+
+Select the first option "Create an empty project". On the next screen provide the "Lineage Project" as the name.
+
+![alt text](containter_creation-10.png)
+
+Click "Create" button
+
+![alt text](containter_creation-11.png)
+
+When project in place, Click "Manage" tab and then sub-tab of "Access Control". You will see your user as the only one in the list.
+
+Next step is to add Administrator as a collaborator to the project. This activity is not mandatory, but if the lab is done on the shared environment with several users, then Administrator would be able to support you on the journey. Same way in regular system usage you would add more colleagues from your organization to team up on specific task with you.
+
+![alt text](containter_creation-12.png)
+
+Select "Add collaborators - Add users" button. In the new window start typing "admin". For the Admin user found in Search results select the Role as either Admin or Editor.
+
+![alt text](containter_creation-13.png)
+
+Click "Next", now you can see both users in the list of collaborators on this project with their roles defined.
+
+This concludes the Step 0 - Pre-work for the Data lineage lab
+
+You may now proceed with [Step 1 - Data Pipelines creation scenario](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_1_Data_Pipelines_creation.md)
