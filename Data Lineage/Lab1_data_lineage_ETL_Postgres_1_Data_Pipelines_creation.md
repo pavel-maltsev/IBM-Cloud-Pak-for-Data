@@ -188,7 +188,7 @@ Don't forget to click Save button on the bottom-right corner of the screen, othe
 ![alt text](/Data%20Lineage/images/dsx_customer-7.png)
 
 > [!CAUTION]
-> When working with DataStage do not confuse the stage related Save button on the bottom-right position with the Flow save button which is located in the top line together with Compile and Run activities. Those do not confirm saving the unsaved events on the stage level.
+> When working with DataStage, do not confuse the stage related Save button on the bottom-right position with the Flow save button which is located in the top line together with Compile and Run activities. Those on top do not confirm saving the unsaved events on the stage level.
 
 Now, as you saved the Stage changes, you may Save, Compile and then Run the DataStage flow by performing those operations on the top of the screen one by one and receiving confirmation on completion.
 
