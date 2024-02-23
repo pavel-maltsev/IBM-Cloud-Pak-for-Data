@@ -14,7 +14,7 @@ I've used the DVD Rental Database described in section [Sample data assets](/Set
 
 On the database which is a planned as a Target, 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.
 
-1. Table for Target connection of ETL. You may need to change schema name "public" to a different value.
+1. 2 tables for Target connection of ETL. You may need to change schema name "public" to a different value which exists in your database.
 
 ```sql
 CREATE TABLE public.full_address (
@@ -26,6 +26,21 @@ CREATE TABLE public.full_address (
 	city varchar(50) NOT NULL,
 	country varchar(50) NOT NULL,
 	full_address varchar(300) NOT NULL
+);
+```
+
+```sql
+CREATE TABLE public.my_customer (
+	customer_id int4 NOT NULL,
+	store_id int2 NOT NULL,
+	first_name varchar(45) NOT NULL,
+	last_name varchar(45) NOT NULL,
+	email varchar(50) NULL,
+	address_id int2 NOT NULL,
+	activebool bpchar(1) NOT NULL,
+	create_date date NOT NULL,
+	last_update timestamp(6) NULL,
+	active int4 NULL
 );
 ```
 
