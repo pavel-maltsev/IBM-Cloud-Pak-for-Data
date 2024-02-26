@@ -68,14 +68,6 @@ Manta license used on the environment should have about 100 of the "Unused scrip
 
 ## 2.3 Environment setup
 
-### IKC to Manta services integration
-
-When preparing to run this lab chapter, make sure your CP4D environment is setup properly. There is a must have condition that services of IKC and Manta are setup properly and both are integrated. This can be checked in your Project when on the Asset page selecting Add New asset button and then clicking the tile Metadata import. If you immediately then jump to the screen where you can enter the metadata import name, then your IKC service doesn't have a connection to Manta service setup. Instead you should see the full set of the tiles related to the various metadata import options together with the number of available licensed Manta scripts to utilise.
-
-![alt text](/Data%20Lineage/images/mdi_tiles.png)
-
-If you don't see such a screen ask you CP4D administrator to restart full set of pods which have either Manta or WKS in the name. This should help if the environment has been once setup correctly. From the moment the pods have been restarted and obtained "running" status, you should be able to utilise those MDI capabilities in full scale.
-
 ### User creation
 
 We would separate this demo scenario from the other topics and also demonstrate how the Connectors can be freely shared by the authorised user with other Data Stewards.
@@ -237,6 +229,16 @@ Select "Add collaborators - Add users" button. In the new window start typing "a
 ![alt text](/Data%20Lineage/images/containter_creation-13.png)
 
 Click "Next", now you can see both users in the list of collaborators on this project with their roles defined.
+
+## 2.5 IKC to Manta services integration
+
+When preparing to run this lab chapter, make sure your CP4D environment is setup properly. There is a must have condition that services of IKC and Manta are setup properly and both are integrated. This can be checked in your Project when on the Asset page selecting "New asset" button and then clicking the tile Metadata import. If you immediately then jump into the screen where you can enter the metadata import name, then your IKC service doesn't have a connection to Manta service setup. Instead, you should see the full set of the tiles related to the various metadata import options together with the number of available licensed Manta scripts to utilise, as per screenshot below.
+
+![alt text](/Data%20Lineage/images/mdi_tiles.png)
+
+If you don't see such a screen ask you RedHat Openshift administrator to restart full set of pods which have either Manta or WKS in the name. This should help if the environment has been once setup correctly. From the moment the pods have been restarted and obtained "running" status, you should be able to utilise those MDI capabilities in full scale.
+
+Without this setup step resolved you won't be able to complete the lab!
 
 This concludes the Step 0 - Pre-work for the Data lineage lab.
 
