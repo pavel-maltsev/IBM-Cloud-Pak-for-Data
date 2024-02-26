@@ -102,7 +102,7 @@ Re-run the mdi scan again when issue origin is fixed.
 
 Now you have your Source and Target metadata successfully imported into the CP4D catalog and available for other Data Stewards.
 
-## 5.2 Metadata import of DataStage ETL pilelines
+## 5.2 Metadata import of DataStage ETL pipelines
 
 First step of getting the proper lineage result is to scan the data pipelines. In this lab we have created 2 ETL jobs in the CP4D project that move the data between 2 databases we've scanned on the previous step. Now it's time to import this ETL lineage information in to our Catalog.
 
