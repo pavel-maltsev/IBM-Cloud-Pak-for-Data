@@ -55,6 +55,9 @@ AS SELECT cu.customer_id AS id,
      JOIN full_address a ON cu.address_id = a.address_id;
 ```
 
+> [!IMPORTANT]
+> Make sure that the PostgreSQL account under which you plan to work with these 2 databases has the all necessary privileges granted to select and modify the table data, truncate and re-create tables, request metadata details, including for the newly created by the scripts above ones.
+
 ## 2.2 Services used in the lab
 
 For successful lab execution CP4D instance should have IKC, Manta and DataStage Ent. services deployed.
