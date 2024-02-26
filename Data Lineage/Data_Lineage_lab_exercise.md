@@ -8,6 +8,7 @@ Step 0 - Pre-work
 
 1.  Objectives
 2.  Pre-work
+
     2.1) Setup the data sources
     2.2 CP4D services used in the lab
     2.3. Setup environment - User creation - Platform connections creation
