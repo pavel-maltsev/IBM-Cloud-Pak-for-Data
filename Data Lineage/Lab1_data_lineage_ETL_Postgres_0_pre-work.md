@@ -72,7 +72,9 @@ Manta license used on the environment should have about 100 of the "Unused scrip
 
 When preparing to run this lab chapter, make sure your CP4D environment is setup properly. There is a must have condition that services of IKC and Manta are setup properly and both are integrated. This can be checked in your Project when on the Asset page selecting Add New asset button and then clicking the tile Metadata import. If you immediately then jump to the screen where you can enter the metadata import name, then your IKC service doesn't have a connection to Manta service setup. Instead you should see the full set of the tiles related to the various metadata import options together with the number of available licensed Manta scripts to utilise.
 
-![alt text](image.png)
+![alt text](/Data%20Lineage/images/mdi_tiles.png)
+
+If you don't see such a screen ask you CP4D administrator to restart full set of pods which have either Manta or WKS in the name. This should help if the environment has been once setup correctly. From the moment the pods have been restarted and obtained "running" status, you should be able to utilise those MDI capabilities in full scale.
 
 ### User creation
 
