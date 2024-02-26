@@ -8,17 +8,15 @@ Step 0 - Pre-work
 
 1.  Objectives
 2.  Pre-work
+    - Setup the data sources
+    - CP4D services used in the lab
+    - Setup environment
+      - User creation
+      - Platform connections creation
+    - Creation of Projects and Catalogs
+    - IKC and Manta services integration
 
-    2.1) Setup the data sources
-    2.2 CP4D services used in the lab
-    2.3. Setup environment - User creation - Platform connections creation
-
-            2.4 Creation of Projects and Catalogs
-            2.5 IKC and Manta services integration
-
-        Step 1 - MDI and pipeline creation
-
-3)  Connectivity and asset import
+Step 1 - MDI and pipeline creation 3. Connectivity and asset import
 
 3. Lineage metadata import
 4. Lineage results review
