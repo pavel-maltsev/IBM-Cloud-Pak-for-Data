@@ -68,6 +68,12 @@ Manta license used on the environment should have about 100 of the "Unused scrip
 
 ## 2.3 Environment setup
 
+### IKC to Manta services integration
+
+When preparing to run this lab chapter, make sure your CP4D environment is setup properly. There is a must have condition that services of IKC and Manta are setup properly and both are integrated. This can be checked in your Project when on the Asset page selecting Add New asset button and then clicking the tile Metadata import. If you immediately then jump to the screen where you can enter the metadata import name, then your IKC service doesn't have a connection to Manta service setup. Instead you should see the full set of the tiles related to the various metadata import options together with the number of available licensed Manta scripts to utilise.
+
+![alt text](image.png)
+
 ### User creation
 
 We would separate this demo scenario from the other topics and also demonstrate how the Connectors can be freely shared by the authorised user with other Data Stewards.
