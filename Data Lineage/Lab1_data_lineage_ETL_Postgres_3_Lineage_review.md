@@ -105,6 +105,8 @@ Use the "Go to asset's technical data lineage" link to drill down. If you click 
 > [!TIP]
 > Another option can be to use the "Go to asset source" link right below this one. This will bring you directly to the DataStage flow design canvas in the Project where flow resids, if you have corresponding privileges setup for your user.
 
+## 6.2 Technical lineage representation of the same pipeline
+
 Clicking on the technical lineage transfers you to the next part of demonstration - technical lineage
 
 ![alt text](image-16.png)
@@ -126,3 +128,45 @@ You will now see that this view is originating from 2 tables: "my_customer" and 
 If you click on the "name" column in the "Customer_and_address_BODY" script and also hover the "TT" ![alt text](image-20.png) icon, you will see the data flow, including the formula hidden in the view DDL script itself.
 
 ![alt text](image-19.png)
+
+## 6.3 Lab exercies results technical lineage
+
+Click on the "IBM Automatic Data Lineage" logo on the top-left corner.
+
+![alt text](image-21.png)
+
+This will close the current screen and move you to the Repository browse screen. Repository contains the full detailed result of all the scans on all the object performed so far.
+
+![alt text](image-22.png)
+
+In our lab we have worked with technologies of IBM DataStage and PostgreSQL. Those are now visible in the list.
+
+If you open the DataStage section you will see both flows we've imported with MDI job in IKC Project.
+
+![alt text](image-23.png)
+
+You may click on the dsx_Migrate_Full_Address flow to explore the details.
+
+![alt text](image-24.png)
+
+Next drag and drop the 2 dsx*Migrate*... flow names (located on the level right below the "Lineage Project") to the section of Selected for lineage on the right-botton side of the screen. As alternative, you could use the "+" sign next to those lines.
+
+![alt text](image-25.png)
+
+In the Visualization parameters select "Custom settings".
+
+![alt text](image-26.png)
+
+Right to selected line choose the proper options for visualization as per screenshot:
+
+![alt text](image-27.png)
+
+Click Visualize button.
+
+![alt text](image-28.png)
+
+This will display the complete lineage of our lab exercise: 2 created jobs, all the source and target tables, custom built view in PostgreSQL target database.
+
+![alt text](image-29.png)
+
+# 6.4 Additional technical lineage content available
