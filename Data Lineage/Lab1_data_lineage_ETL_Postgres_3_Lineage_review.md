@@ -36,23 +36,23 @@ The high level of the details covers most of the questions from business departm
 
 Open the All Catalogs from CP4D main menu and select "Lineage Demo Catalog" to work with.
 
-![alt text](image.png)
+![alt text](/Data%20Lineage/images/lineage_review-0.png)
 
 Now you see all metadata objects imported during this exercise. Open Filter icon in the search line between the Recently added section and the full list of the catalogued objects. Select in Asset type "Data integration job". In the search line start typing "dsx\_". The list will change and show you only 2 filtered items.
 
-![alt text](image-1.png)
+![alt text](/Data%20Lineage/images/lineage_review-1.png)
 
 Click on the "dsx_Migrate_Customers..." asset. The screen with show up this entity. The DataStage flow contatins 2 nested assets which are the connectors "customer_Target" and "customer_Source". Those are the names we've used when designed the 2 stages Datastage flow.
 
-![alt text](image-2.png)
+![alt text](/Data%20Lineage/images/lineage_review-2.png)
 
-![alt text](image-3.png)
+![alt text](/Data%20Lineage/images/lineage_review-3.png)
 
 You may investigate the asset details further, e.g. by clicking on the "customer_Source" connector and see the columns on the links of the job which have also been imported to the Catalog as separate named objects.
 
 Return back on the primary catalog page and now select the DataStage flow "dsx_Migrate_Full_Address...". That one has more complex logic and we would start from browsing it's details.
 
-![alt text](image-4.png)
+![alt text](/Data%20Lineage/images/lineage_review-4.png)
 
 On Overview tab you can find all relevant technical details on the flow composition, including the full set of transormation stages we've used (Join, Merge, Transformer).
 
@@ -60,19 +60,19 @@ When you proceed with the Data Governance initiative, the descriptions to this g
 
 On the Asset tab the detailed information is presented in a form of nested tree.
 
-![alt text](image-5.png)
+![alt text](/Data%20Lineage/images/lineage_review-5.png)
 
 When you click on the Lineage tab the high-level data flows would be revealed.
 
-![alt text](image-6.png)
+![alt text](/Data%20Lineage/images/lineage_review-6.png)
 
 If you would need to extract this information to external documentation or publish on some corporate project portal, you may use the buttons on the top-right part of the screen to extract the data from Catalog in few ways
 
-![alt text](image-7.png)
+![alt text](/Data%20Lineage/images/lineage_review-7.png)
 
 2 options are available for the export: "Tabular view in CSV file" and "Image of lineage graph in PDF".
 
-![alt text](image-8.png)
+![alt text](/Data%20Lineage/images/lineage_review-8.png)
 
 You may test those by selecting the radio button and clicking "Export image" button.
 
@@ -80,27 +80,27 @@ On the graph you may recognise that the connecting lines between sources for the
 
 By default, Business lineage graph hides the details of the larger scale data pipelines into a packed form. To reveal the detailed picture click on the 3 dots right to the Datastage asset name and select "Show all" in a drop down menu.
 
-![alt text](image-9.png)
+![alt text](/Data%20Lineage/images/lineage_review-9.png)
 
 This will show you the direct source and target tables of the DataStage flow which we can recognise from the past. Nevertheless, the information about where from the data is landed to e.g. address or country tables is still present on the screen which gives the business users more holistic understanding of the data pipelines within this and neighbouring assets.
 
-![alt text](image-10.png)
+![alt text](/Data%20Lineage/images/lineage_review-10.png)
 
 Additional subset of information can be displayed if the "Expand" button is clicked next to informational message saying that datastage flow consists of 7 internal stages.
 
-![alt text](image-11.png)
+![alt text](/Data%20Lineage/images/lineage_review-11.png)
 
 Also in the bottom-right corner you will find the legend and map of the lineage diagram.
 
-![alt text](image-12.png)
+![alt text](/Data%20Lineage/images/lineage_review-12.png)
 
 If we would like to discover the lineage in more details, including transformation scripts or changes through the time we should then switch to the technical lineage screen. Open the first Overview tab of the same job.
 
-On the right side of the screen there should be the detailed information pane "About this asset". If not there, click the ![alt text](image-13.png) sign in top-right corner.
+On the right side of the screen there should be the detailed information pane "About this asset". If not there, click the ![alt text](/Data%20Lineage/images/lineage_review-13.png) sign in top-right corner.
 
-![alt text](image-14.png)
+![alt text](/Data%20Lineage/images/lineage_review-14.png)
 
-Use the "Go to asset's technical data lineage" link to drill down. If you click the link directly, technical lineage will be opened in the same window. If you want to compare the 2 representations, you may like to keep both windows, so click on the box with arrow sign left from the link name ![alt text](image-15.png)
+Use the "Go to asset's technical data lineage" link to drill down. If you click the link directly, technical lineage will be opened in the same window. If you want to compare the 2 representations, you may like to keep both windows, so click on the box with arrow sign left from the link name ![alt text](/Data%20Lineage/images/lineage_review-15.png)
 
 > [!TIP]
 > Another option can be to use the "Go to asset source" link right below this one. This will bring you directly to the DataStage flow design canvas in the Project where flow resids, if you have corresponding privileges setup for your user.
@@ -109,11 +109,11 @@ Use the "Go to asset's technical data lineage" link to drill down. If you click 
 
 Clicking on the technical lineage transfers you to the next part of demonstration - technical lineage
 
-![alt text](image-16.png)
+![alt text](/Data%20Lineage/images/lineage_review-16.png)
 
 Use the Options menu on the top-right corner, switch to the "Detail" tab and use the radio buttons in column "H" to switch representation to the High level of details which will display all the columns for current subset of visualised assets. Click Apply.
 
-![alt text](image-17.png)
+![alt text](/Data%20Lineage/images/lineage_review-17.png)
 
 if you click on the full_address column in full_address table of public schema, the graph will show you the complete set of the attributes and transformations that supply the data for this column, same as consumers of this column data later on. Keep in mind that representation of the information at the moment is limited by selection of the lineage scope we've used when switched to this screen from IKC Catalog. All the relations are valid, but potentially this could be not the complete list.
 
@@ -121,53 +121,53 @@ To show the difference, let us show the full set of the pipelines feeding the fi
 
 Right-click the "customer_and_address" view name and select "Restart visualization from this element" in the drop down menu.
 
-![alt text](image-18.png)
+![alt text](/Data%20Lineage/images/lineage_review-18.png)
 
 You will now see that this view is originating from 2 tables: "my_customer" and "full_address". Those are populated with data by 2 ETL jobs: dsx_Migrate_Customer and dsx_Migrate_Full_Address
 
-If you click on the "name" column in the "Customer_and_address_BODY" script and also hover the "TT" ![alt text](image-20.png) icon, you will see the data flow, including the formula hidden in the view DDL script itself.
+If you click on the "name" column in the "Customer_and_address_BODY" script and also hover the "TT" ![alt text](/Data%20Lineage/images/lineage_review-20.png) icon, you will see the data flow, including the formula hidden in the view DDL script itself.
 
-![alt text](image-19.png)
+![alt text](/Data%20Lineage/images/lineage_review-19.png)
 
 ## 6.3 Lab exercise results technical lineage
 
 Click on the "IBM Automatic Data Lineage" logo on the top-left corner.
 
-![alt text](image-21.png)
+![alt text](/Data%20Lineage/images/lineage_review-21.png)
 
 This will close the current screen and move you to the Repository browse screen. Repository contains the full detailed result of all the scans on all the object performed so far.
 
-![alt text](image-22.png)
+![alt text](/Data%20Lineage/images/lineage_review-22.png)
 
 In our lab we have worked with technologies of IBM DataStage and PostgreSQL. Those are now visible in the list.
 
 If you open the DataStage section you will see both flows we've imported with MDI job in IKC Project.
 
-![alt text](image-23.png)
+![alt text](/Data%20Lineage/images/lineage_review-23.png)
 
 You may click on the dsx_Migrate_Full_Address flow to explore the details.
 
-![alt text](image-24.png)
+![alt text](/Data%20Lineage/images/lineage_review-24.png)
 
 Next drag and drop the 2 dsx*Migrate*... flow names (located on the level right below the "Lineage Project") to the section of Selected for lineage on the right-botton side of the screen. As alternative, you could use the "+" sign next to those lines.
 
-![alt text](image-25.png)
+![alt text](/Data%20Lineage/images/lineage_review-25.png)
 
 In the Visualization parameters select "Custom settings".
 
-![alt text](image-26.png)
+![alt text](/Data%20Lineage/images/lineage_review-26.png)
 
 Right to selected line choose the proper options for visualization as per screenshot:
 
-![alt text](image-27.png)
+![alt text](/Data%20Lineage/images/lineage_review-27.png)
 
 Click Visualize button.
 
-![alt text](image-28.png)
+![alt text](/Data%20Lineage/images/lineage_review-28.png)
 
 This will display the complete lineage of our lab exercise: 2 created Datastage flows, all the PostgreSQL source and target tables, custom built view in PostgreSQL target database.
 
-![alt text](image-29.png)
+![alt text](/Data%20Lineage/images/lineage_review-29.png)
 
 # 6.4 Additional technical lineage content available
 
@@ -175,35 +175,35 @@ If you recognized that during pre-work, the source/target databases you've resto
 
 Right-click on the "address" table on the source schema of dvdrental and select "Restart visualization for this element".
 
-![alt text](image-30.png)
+![alt text](/Data%20Lineage/images/lineage_review-30.png)
 
 The diagram rebuilt shows the additional data targets which consume data from "address" table.
 
-![alt text](image-31.png)
+![alt text](/Data%20Lineage/images/lineage_review-31.png)
 
 Select the column address in this table. Use the options menu in the top-right corner to select High level of details and click Apply.
 
-![alt text](image-32.png)
+![alt text](/Data%20Lineage/images/lineage_review-32.png)
 
 This will show you that column "address" is also used in 2 other views "customer_list" and "stall_list".
 
-![alt text](image-33.png)
+![alt text](/Data%20Lineage/images/lineage_review-33.png)
 
 This provides the information of potential impact of "address" reference table and specifically "address" column metastructure changes to other use cases, not only to DataStage flow which we've been aware before. E.g. change of the column length or type should be agreed with all interested parties on neighbouring projects, not only on ETL.
 
 Click on the "IBM Automatic Data Lineage" logo on the top-left corner.
 
-![alt text](image-21.png)
+![alt text](/Data%20Lineage/images/lineage_review-21.png)
 
 On the top-right of the screen remove the previously selected content for lineage by pressing trash bin icons next to the dsx asset names
 
-![alt text](image-34.png)
+![alt text](/Data%20Lineage/images/lineage_review-34.png)
 
 Now drag and drop to that section schema named "public" in the "dvdrental" database
 
-![alt text](image-35.png)
+![alt text](/Data%20Lineage/images/lineage_review-35.png)
 
-![alt text](image-36.png)
+![alt text](/Data%20Lineage/images/lineage_review-36.png)
 
 Click Visualize button with Custom settings selected same way as last time.
 
@@ -212,6 +212,6 @@ Click Visualize button with Custom settings selected same way as last time.
 
 Feel free to play around with filters, details and dependency analysis on the representation screen displayed
 
-![alt text](image-37.png)
+![alt text](/Data%20Lineage/images/lineage_review-37.png)
 
 This concludes the [HOL for Data lineage](/Data%20Lineage/Data_Lineage_lab_exercise.md).
