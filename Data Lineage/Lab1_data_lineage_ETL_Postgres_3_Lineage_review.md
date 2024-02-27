@@ -129,7 +129,7 @@ If you click on the "name" column in the "Customer_and_address_BODY" script and 
 
 ![alt text](image-19.png)
 
-## 6.3 Lab exercies results technical lineage
+## 6.3 Lab exercise results technical lineage
 
 Click on the "IBM Automatic Data Lineage" logo on the top-left corner.
 
@@ -165,8 +165,53 @@ Click Visualize button.
 
 ![alt text](image-28.png)
 
-This will display the complete lineage of our lab exercise: 2 created jobs, all the source and target tables, custom built view in PostgreSQL target database.
+This will display the complete lineage of our lab exercise: 2 created Datastage flows, all the PostgreSQL source and target tables, custom built view in PostgreSQL target database.
 
 ![alt text](image-29.png)
 
 # 6.4 Additional technical lineage content available
+
+If you recognized that during pre-work, the source/target databases you've restored from backup had much more content rather than the tables we've used for this lab. Lets explore some more lineage analysis result available after the MDI scans we've performed.
+
+Right-click on the "address" table on the source schema of dvdrental and select "Restart visualization for this element".
+
+![alt text](image-30.png)
+
+The diagram rebuilt shows the additional data targets which consume data from "address" table.
+
+![alt text](image-31.png)
+
+Select the column address in this table. Use the options menu in the top-right corner to select High level of details and click Apply.
+
+![alt text](image-32.png)
+
+This will show you that column "address" is also used in 2 other views "customer_list" and "stall_list".
+
+![alt text](image-33.png)
+
+This provides the information of potential impact of "address" reference table and specifically "address" column metastructure changes to other use cases, not only to DataStage flow which we've been aware before. E.g. change of the column length or type should be agreed with all interested parties on neighbouring projects, not only on ETL.
+
+Click on the "IBM Automatic Data Lineage" logo on the top-left corner.
+
+![alt text](image-21.png)
+
+On the top-right of the screen remove the previously selected content for lineage by pressing trash bin icons next to the dsx asset names
+
+![alt text](image-34.png)
+
+Now drag and drop to that section schema named "public" in the "dvdrental" database
+
+![alt text](image-35.png)
+
+![alt text](image-36.png)
+
+Click Visualize button with Custom settings selected same way as last time.
+
+> [!CAUTION]
+> We can do that for the whole schema as soon as the content of this database is not extensive. In real live you would select smaller atomic groups of objects for analysis as per your real task. In case if selected set of objects contains too many assets, you will receive the warning message with corresponding content while initiating visualization.
+
+Feel free to play around with filters, details and dependency analysis on the representation screen displayed
+
+![alt text](image-37.png)
+
+This concludes the [HOL for Data lineage](/Data%20Lineage/Data_Lineage_lab_exercise.md).
