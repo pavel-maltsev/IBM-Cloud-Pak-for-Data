@@ -86,7 +86,7 @@ This will show you the direct source and target tables of the DataStage flow whi
 
 ![alt text](image-10.png)
 
-Additional subset of information can be displayed if the "Expand" button is clicked next to informational message that datastage flow consists of 7 internal stages.
+Additional subset of information can be displayed if the "Expand" button is clicked next to informational message saying that datastage flow consists of 7 internal stages.
 
 ![alt text](image-11.png)
 
@@ -102,7 +102,8 @@ On the right side of the screen there should be the detailed information pane "A
 
 Use the "Go to asset's technical data lineage" link to drill down. If you click the link directly, technical lineage will be opened in the same window. If you want to compare the 2 representations, you may like to keep both windows, so click on the box with arrow sign left from the link name ![alt text](image-15.png)
 
-Another option can be to use the "Go to asset source" link right below this one. This will bring you directly to the DataStage flow design canvas in the Project where flow resids, if you have corresponding privileges setup for your user.
+> [!TIP]
+> Another option can be to use the "Go to asset source" link right below this one. This will bring you directly to the DataStage flow design canvas in the Project where flow resids, if you have corresponding privileges setup for your user.
 
 Clicking on the technical lineage transfers you to the next part of demonstration - technical lineage
 
