@@ -108,3 +108,21 @@ Use the "Go to asset's technical data lineage" link to drill down. If you click 
 Clicking on the technical lineage transfers you to the next part of demonstration - technical lineage
 
 ![alt text](image-16.png)
+
+Use the Options menu on the top-right corner, switch to the "Detail" tab and use the radio buttons in column "H" to switch representation to the High level of details which will display all the columns for current subset of visualised assets. Click Apply.
+
+![alt text](image-17.png)
+
+if you click on the full_address column in full_address table of public schema, the graph will show you the complete set of the attributes and transformations that supply the data for this column, same as consumers of this column data later on. Keep in mind that representation of the information at the moment is limited by selection of the lineage scope we've used when switched to this screen from IKC Catalog. All the relations are valid, but potentially this could be not the complete list.
+
+To show the difference, let us show the full set of the pipelines feeding the final "customer_and_address" view we've created on the pre-work step for this lab.
+
+Right-click the "customer_and_address" view name and select "Restart visualization from this element" in the drop down menu.
+
+![alt text](image-18.png)
+
+You will now see that this view is originating from 2 tables: "my_customer" and "full_address". Those are populated with data by 2 ETL jobs: dsx_Migrate_Customer and dsx_Migrate_Full_Address
+
+If you click on the "name" column in the "Customer_and_address_BODY" script and also hover the "TT" ![alt text](image-20.png) icon, you will see the data flow, including the formula hidden in the view DDL script itself.
+
+![alt text](image-19.png)
