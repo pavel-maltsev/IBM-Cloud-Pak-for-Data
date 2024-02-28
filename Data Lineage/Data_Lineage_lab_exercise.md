@@ -36,7 +36,7 @@ To follow this exercise you would complete activites in 4 lab chapters:
 [Step 3 - Review lineage results](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_3_Lineage_review.md)
 
 6. Review of lineage analysis
-   - CP4D Catalog review
-   - Technical lineage representation of same pipeline
-   - Lave exercise results technical lineage
+   - CP4D Catalog content review
+   - Technical lineage representation for pipeline
+   - Lab exercise results, technical lineage
    - Additional technical lineage content available
