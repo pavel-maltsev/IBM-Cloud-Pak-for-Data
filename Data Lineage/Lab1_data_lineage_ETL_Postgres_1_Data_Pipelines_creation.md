@@ -50,7 +50,7 @@ You should now see 2 connection assets in your project:
 ![alt text](/Data%20Lineage/images/con-import-7.png)
 
 > [!NOTE]
-> As it has been discribed in pre-work document, above was the demonstration of the re-usability of the Shared Platorm connections by all premitted Data Stewards.
+> As it has been discribed in pre-work document, above was the demonstration of the re-usability of the Shared Platorm connections by all permitted Data Stewards.
 >
 > CP4D platform removed the need of presonalised user accounts to be created in every specific data source for each of the users. Instead, the connection can be created only once, maintained centrally and re-used by the various users, working on their own projects.
 >
