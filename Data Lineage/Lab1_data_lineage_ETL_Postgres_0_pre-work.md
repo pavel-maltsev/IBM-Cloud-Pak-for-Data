@@ -10,6 +10,13 @@ The lab will use 2 databases and 2 ETL jobs to demonstrate the value of data lin
 
 Before starting the lab excersise please prepare 2 RDBMS data sources. Here we are to use the Postgres available databases deployed outside of CP4D cluster but to which CP4D cluster is able natively connect to.
 
+> [!NOTE]
+> If you are using this lab instructions as a part of the guided enablement, you should be given the credentials for PostgreSQL databases by your instructor.
+>
+> If you do this lab on your own, please check the link below on where to find the database dump and how to deploy that on your environment.
+>
+> Feel free to contact me directly if support with content is needed.
+
 I've used the DVD Rental Database described in section [Sample data assets](/Setup%20WKC%20demo%20environment/Data%20Assets/Sample_data_assets.md). The database has been deployed twice on different schemas to imitate separate source and target for the pipelines lineage.
 
 On the database which is a planned as a Target, 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.

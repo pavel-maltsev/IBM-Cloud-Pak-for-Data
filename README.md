@@ -26,7 +26,7 @@ Team requirements for the starting the CP4D journey are [located here](/Requirem
 
 You may use the Deployer or similar service for configuring the proper configuraiton of your services on CP4D platform
 
-### Demo content of IKC
+### Demo content of IKC + Manta
 
 For the creation of the proper demo environment you may need to add the below listed content to the CP4D IKC service. [Detailed guide can be found here](/Setup%20WKC%20demo%20environment/WKC_demo_setup_general_steps.md)
 
@@ -37,6 +37,6 @@ For the creation of the proper demo environment you may need to add the below li
 5. Platform connections
 6. Projects
 7. Catalogs
-8. Metadata import assets - [covered as a part of Manta data lineage guide](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_2_Lineage_metadata_import.md)
+8. Metadata import assets
 9. Data assets (remote of different types and local)
-10. Data lineage with Manta [complete demo setup on your own](/Data%20Lineage/Data_Lineage_lab_exercise.md)
+10. Data lineage with Manta - [complete demo setup on your own](/Data%20Lineage/Data_Lineage_lab_exercise.md)
