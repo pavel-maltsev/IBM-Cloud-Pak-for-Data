@@ -21,7 +21,10 @@ I've used the DVD Rental Database described in section [Sample data assets](/Set
 
 On the database which is a planned as a Target, 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.
 
-1. 2 tables for Target connection of ETL. You may need to change schema name "public" to a different value which exists in your database.
+1. 2 tables for Target connection of ETL.
+
+> [!CAUTION]
+> You may need to change schema name "public" to a different value which exists in your database. Also, if you are doing the lab in a group, you may be required to create personalized table names, e.g. suffixed by "\_YourInitials". Ask your class instructor for proper naming.
 
 ```sql
 CREATE TABLE public.full_address (
