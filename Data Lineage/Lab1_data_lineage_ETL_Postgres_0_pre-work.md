@@ -10,7 +10,7 @@ The lab will use 2 databases and 2 ETL jobs to demonstrate the value of data lin
 
 Before starting the lab excersise please prepare 2 RDBMS data sources. Here we are to use the Postgres available databases deployed outside of CP4D cluster but to which CP4D cluster is able natively connect to.
 
-If you utilise your own CP4D cluster from IBM Techzone, you may request the empty VM from the same datacenter to deploy your own server with [Postgres using the instructions](https://github.com/pavel-maltsev/Databases/tree/main/PostgreSQL). Otherwise use any environment you own which can be reached from your CP4D cluster.
+If you utilise your own CP4D cluster from IBM Techzone, you may request the empty VM from the same datacenter to deploy your own server with [Postgres using the instructions](https://github.com/pavel-maltsev/Databases/tree/main/PostgreSQL). Otherwise, use any environment you own, which can be reached from your CP4D cluster.
 
 > [!NOTE]
 > If you are using thess lab instructions as a part of the guided enablement, you should be given the credentials for PostgreSQL databases by your instructor.
