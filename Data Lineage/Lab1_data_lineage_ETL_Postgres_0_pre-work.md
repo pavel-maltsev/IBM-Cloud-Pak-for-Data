@@ -23,7 +23,7 @@ I've used the DVD Rental Database described in section [Sample data assets](/Set
 
 On the database which is a planned as a Target, 2 assets have to be created on top of pre-built content. Use any available method to connect to database and run the following SQL statements inside the target schema.
 
-1. 2 tables for Target connection of ETL.
+a) 2 tables for Target connection of ETL.
 
 > [!CAUTION]
 > You may need to change schema name "public" to a different value which exists in your database. Also, if you are doing the lab in a group, you may be required to create personalized table names, e.g. suffixed by "\_YourInitials". The re-use of same tables for different scans may harm the lineage results and require additional actions to resolve. As a best practice the lineage scans should be initiated by specific group of the users in a controlled and organized way.
@@ -58,7 +58,7 @@ CREATE TABLE public.my_customer (
 );
 ```
 
-2. View for data summarization. That will extend the lineage flow diagram at the demo time.
+b) View for data summarization. That will extend the lineage flow diagram at the demo time.
 
 ```sql
 CREATE OR REPLACE VIEW public.customer_and_address
