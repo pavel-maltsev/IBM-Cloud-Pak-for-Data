@@ -24,7 +24,7 @@ On the database which is a planned as a Target, 2 assets have to be created on t
 1. 2 tables for Target connection of ETL.
 
 > [!CAUTION]
-> You may need to change schema name "public" to a different value which exists in your database. Also, if you are doing the lab in a group, you may be required to create personalized table names, e.g. suffixed by "\_YourInitials". The re-use of same tables for different scans may harm the lineage results and require additional actions to resolve. As a best practice the lineage scans should be initiated by specific group of the user in a guided documented way.
+> You may need to change schema name "public" to a different value which exists in your database. Also, if you are doing the lab in a group, you may be required to create personalized table names, e.g. suffixed by "\_YourInitials". The re-use of same tables for different scans may harm the lineage results and require additional actions to resolve. As a best practice the lineage scans should be initiated by specific group of the users in a controlled and organized way.
 >
 > Ask your class instructor for proper naming.
 
