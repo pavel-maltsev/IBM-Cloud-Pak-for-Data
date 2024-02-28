@@ -11,7 +11,7 @@ The lab will use 2 databases and 2 ETL jobs to demonstrate the value of data lin
 Before starting the lab excersise please prepare 2 RDBMS data sources. Here we are to use the Postgres available databases deployed outside of CP4D cluster but to which CP4D cluster is able natively connect to.
 
 > [!NOTE]
-> If you are using this lab instructions as a part of the guided enablement, you should be given the credentials for PostgreSQL databases by your instructor.
+> If you are using thess lab instructions as a part of the guided enablement, you should be given the credentials for PostgreSQL databases by your instructor.
 >
 > If you do this lab on your own outside of IBM facilitated enablement, please check the link below on where to find the database dump and how to deploy that on your personal environment.
 >
