@@ -103,7 +103,7 @@ On the right side of the screen there should be the detailed information pane "A
 Use the "Go to asset's technical data lineage" link to drill down. If you click the link directly, technical lineage will be opened in the same window. If you want to compare the 2 representations, you may like to keep both windows, so click on the box with arrow sign left from the link name ![alt text](/Data%20Lineage/images/lineage_review-15.png)
 
 > [!TIP]
-> Another option can be to use the "Go to asset source" link right below this one. This will bring you directly to the DataStage flow design canvas in the Project where flow resids, if you have corresponding privileges setup for your user.
+> Another option can be to use the "Go to asset source" link right below this one. This will bring you directly to the DataStage flow design canvas in the Project where flow resides, if you have corresponding privileges setup for your user.
 
 ## 6.2 Technical lineage representation of the same pipeline
 
@@ -208,7 +208,7 @@ Now drag and drop to that section schema named "public" in the "dvdrental" datab
 Click Visualize button with Custom settings selected same way as last time.
 
 > [!CAUTION]
-> We can do that for the whole schema as soon as the content of this database is not extensive. In real live you would select smaller atomic groups of objects for analysis as per your real task. In case if selected set of objects contains too many assets, you will receive the warning message with corresponding content while initiating visualization.
+> We can do that for the whole schema as soon as the content of this database is not extensive. In real live you would select smaller atomic groups of objects for analysis as per your real investigation task. In case if selected set of objects contains too many assets, you will receive the warning message with corresponding content while initiating visualization.
 
 Feel free to play around with filters, details and dependency analysis on the representation screen displayed
 
