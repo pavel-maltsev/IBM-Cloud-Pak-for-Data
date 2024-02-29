@@ -1,8 +1,8 @@
 # 1. Objectives
 
-The goal of this excersise is to demonstrate the capabilities of IBM Cloud Pak for Data on monitoring the data lineage, discovery of the internal pipelines in databases and external to then pipelines of DataStage ETL jobs running on IBM CP4D by using the IBM Manta software service.
+The goal of this excersise is to demonstrate the capabilities of IBM Cloud Pak for Data on monitoring the data lineage, discovery of the internal pipelines in databases and external to them pipelines of DataStage ETL jobs running on IBM CP4D by using the IBM Manta software service.
 
-The lab will use 2 databases and 2 ETL jobs to demonstrate the value of data lineage with Manta.
+The lab will use 2 databases and 2 ETL jobs to demonstrate the value of IBM Data Lineage with Manta.
 
 # 2. Pre-work
 
@@ -176,7 +176,7 @@ Done with Target database connection creation. You should now see 2 available co
 For the lab purposes you would need to have one Catalog and at least one Project.
 
 > [!WARNING]
-> When working on the same environments, depending on the setup it may lead that several users working with the same databases but with different MDI procedures may result in getting in Manta repository duplicated entries which you will have later to resolve. Therefore it is strongly recommended that for this specific lab you would utilise your own database copies as separate Platfrom connections and your own DataStage ETL jobs named uniquely in your own Project. Advice for the multi-user lab facilitation is that all the assets created should be suffixed with underscore and user initials, e.g. \_XX
+> When several users discover the same databases but with different MDI procedures with overlapping scope, it may result in getting in Manta repository duplicated entries which you will have later to resolve. Therefore it is strongly recommended that for this specific lab you would utilise your own database copies as separate Platfrom connections and your own DataStage ETL jobs named uniquely in your own Project. Advice for the multi-user lab facilitation is that all the assets created should be suffixed with underscore and user initials, e.g. \_XX
 
 ### Create your Catalog
 
@@ -249,7 +249,7 @@ Click "Next", now you can see both users in the list of collaborators on this pr
 
 ## 2.5 IKC to Manta services integration
 
-When preparing to run this lab chapter, make sure your CP4D environment is setup properly. There is a must have condition that services of IKC and Manta are setup properly and both are integrated. This can be checked in your Project when on the Asset page selecting "New asset" button and then clicking the tile Metadata import. If you immediately then jump into the screen where you can enter the metadata import name, then your IKC service doesn't have a connection to Manta service setup. Instead, you should see the full set of the tiles related to the various metadata import options together with the number of available licensed Manta scripts to utilise, as per screenshot below.
+While preparing to run this lab chapter, make sure your CP4D environment is setup properly. There is a must have condition that services of IKC and Manta are setup properly and both are integrated. This can be checked in your Project when on the Asset page selecting "New asset" button and then clicking the tile Metadata import. If you immediately then jump into the screen where you can enter the metadata import name, then your IKC service doesn't have a connection to Manta service setup. Instead, you should see the full set of the tiles related to the various metadata import options together with the number of available licensed Manta scripts to utilise, as per screenshot below.
 
 ![alt text](/Data%20Lineage/images/mdi_tiles.png)
 
