@@ -385,3 +385,5 @@ Congratulations! You have successfully created your second data transformation p
 This concludes the Step 1 - Data Pipelines creation scenario.
 
 You may now proceed with [Step 2 - Lineage metadata import](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_2_Lineage_metadata_import.md).
+
+[Back to Data lineage HOL page](/Data%20Lineage/Data_Lineage_lab_exercise.md)

@@ -253,10 +253,13 @@ While preparing to run this lab chapter, make sure your CP4D environment is setu
 
 ![alt text](/Data%20Lineage/images/mdi_tiles.png)
 
-If you don't see such a screen ask you RedHat Openshift administrator to restart full set of pods which have either Manta or WKS in the name. This should help if the environment has been once setup correctly. From the moment the pods have been restarted and obtained "running" status, you should be able to utilise those MDI capabilities in full scale.
+If you don't see such a screen, ask you RedHat Openshift administrator to restart full set of pods which have either Manta or WKS in the name. This should help if the environment has been once setup correctly. From the moment the pods have been restarted and obtained "running" status, you should be able to utilise those MDI capabilities in full scale.
 
-Without this setup step resolved you won't be able to complete the lab!
+> [!IMPORTANT]
+> Without this setup step resolved you won't be able to complete the lab!
 
 This concludes the Step 0 - Pre-work for the Data lineage lab.
 
 You may now proceed with [Step 1 - Data Pipelines creation scenario](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_1_Data_Pipelines_creation.md).
+
+[Back to Data lineage HOL page](/Data%20Lineage/Data_Lineage_lab_exercise.md)

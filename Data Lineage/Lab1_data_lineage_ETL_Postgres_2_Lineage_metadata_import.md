@@ -153,3 +153,5 @@ If you want to browse the lineage details, you can jump to the Catalog from this
 ![alt text](/Data%20Lineage/images/mdi_l_dsx-7.png)
 
 This concludes the Datastage ETL pipelines metadata import scenario and this lab exercise chapter. [The "Review Lineage Results" script is located by this link](/Data%20Lineage/Lab1_data_lineage_ETL_Postgres_3_Lineage_review.md)
+
+[Back to Data lineage HOL page](/Data%20Lineage/Data_Lineage_lab_exercise.md)
