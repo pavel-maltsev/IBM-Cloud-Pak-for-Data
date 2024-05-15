@@ -183,7 +183,7 @@ The diagram rebuilt shows the additional data targets which consume data from "a
 
 Select the column address in this table. Use the options menu in the top-right corner to select High level of details and click Apply.
 
-![alt text](/Data%20Lineage/images/lineage_review-32.png)
+![alt text](/Data%20Lineage/images/lineage_review-32.png) [](/Data%20Lineage/images/)
 
 This will show you that column "address" is also used in 2 other views "customer_list" and "stall_list".
 
