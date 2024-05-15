@@ -172,7 +172,7 @@ Can you explain why on the Data Quality tab you see only one SLA rule while on p
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-34.png)
 
-At the same time together with acqnowledgement of the SLA violations on the data assets page we have received the Tasks for remediation in the Task inbox accessible from main CP4D navigation menu
+At the same time together with acknowledgement of the SLA violations on the data assets page we have received the Tasks for remediation in the Task inbox accessible from main CP4D navigation menu
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-35.png)
 
