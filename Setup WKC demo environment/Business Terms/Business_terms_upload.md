@@ -218,8 +218,6 @@ Select 'Business terms' from the main CP4D menu
 
 In the search field type 'customer'
 
-![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-46.png)
-
 In the search results find the Customer business term. There are 2 of those in different categories. Click on the one which is located in the 'Customer 360 Degree View' Primary Category.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-47.png)
