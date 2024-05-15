@@ -3,11 +3,11 @@
 IBM CP4D after standard deployment there are couple of pre-built categories where the sample data classes and reference data sets reside. Those are Locations and uncategorised. Before you can upload the demo content into the service under your own user, this user account should be assigned proper credentials for those existing folders.
 
 > [!IMPORTANT]
-> make sure you are logged into UI under the default cpadmin user account
+> make sure you are logged into UI under the default 'cpadmin' user account
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary.png)
 
-Open the uncategorised category, and switch to the Access Control tab
+Open the 'uncategorised' category, and switch to the 'Access Control' tab
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-1.png)
 
@@ -15,15 +15,15 @@ Open the uncategorised category, and switch to the Access Control tab
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-2.png)
 
-Then select the user account by clicking checkbox on the left and in the right side assign proper priveliges - Admin and/or Owner.
+Then select the user account by clicking checkbox on the left and in the right side assign proper priveliges - 'Admin' and/or 'Owner'.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-3.png)
 
-End your activity by clicking Add on the bottom-right of the screen
+End your activity by clicking 'Add' on the bottom-right of the screen
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-4.png)
 
-You should now get the confirmation message and see the added users in the Access Control tab.
+You should now get the confirmation message and see the added users in the 'Access Control' tab.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-5.png)
 
@@ -45,7 +45,7 @@ Drag-n-drop the file with categories into the pop-up window
 
 Press Next button
 
-Select 'Replace all values' and click Next
+Select 'Replace all values' and click 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-11.png)
 
@@ -53,7 +53,7 @@ In a while you should see the Import Summary screen to confirm successful upload
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-12.png)
 
-Press Close
+Press 'Close'
 
 When back to the Categories screen press 'Refresh categories' button on the right
 
@@ -73,17 +73,18 @@ Select 'Add classification - Import from file' on top-right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-16.png)
 
-Drag-n-drop classifications sample csv file into the pop-up window and press Next
+Drag-n-drop classifications sample csv file into the pop-up window and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-17.png)
 
-Select 'Replace all values' on the next screen and press Next
+Select 'Replace all values' on the next screen and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-18.png)
 
 In a while you should see the Import Summary screen to confirm successful upload
 
 This potentially may not change the list of the classification if default sample data is the same as in the import file.
+
 You may avoid waiting import results by closing the pop-up window.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-29.png)
@@ -100,11 +101,11 @@ Select 'Add policy - Import from file' on top-right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-25.png)
 
-Drag-n-drop policies sample csv file into the pop-up window and press Next
+Drag-n-drop policies sample csv file into the pop-up window and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-26.png)
 
-Select 'Replace all values' on the next screen and press Next
+Select 'Replace all values' on the next screen and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-27.png)
 
@@ -112,15 +113,15 @@ You may avoid waiting import results by closing the pop-up window.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-28.png)
 
-Open Task inbox from the CP4D menu on top-left
+Open 'Task inbox' from the CP4D menu on top-left
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-30.png)
 
-From the task list on the 'Open' tab select 'Publish Classifications' task, review details about import and press Publish button on the right.
+From the task list on the 'Open' tab select 'Publish Classifications' task, review details about import and press 'Publish' button on the right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-31.png)
 
-When doing publish you may want to leave some comments of the approval. This is optional.
+When doing publish you may want to leave some comments of the approval. This is optional. Press 'Publish'.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-34.png)
 
@@ -152,11 +153,11 @@ Select 'Add business term - Import from file' on top-right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-20.png)
 
-Drag-n-drop business terms sample csv file into the pop-up window and press Next
+Drag-n-drop business terms sample csv file into the pop-up window and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-21.png)
 
-Select 'Replace all values' on the next screen and press Next
+Select 'Replace all values' on the next screen and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-22.png)
 
@@ -172,7 +173,7 @@ If you select the checkbox left to the task the screen would change from detaile
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-37.png)
 
-Press Publish, do not add comments, then press Publish again.
+Press Publish, do not add comments, then press 'Publish' again.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-38.png)
 
@@ -190,11 +191,11 @@ Select 'Add rule - Import from file' on top-right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-40.png)
 
-Drag-n-drop rules sample csv file into the pop-up window and press Next
+Drag-n-drop rules sample csv file into the pop-up window and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-41.png)
 
-Select 'Replace all values' on the next screen and press Next
+Select 'Replace all values' on the next screen and press 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-42.png)
 
@@ -202,11 +203,11 @@ Import completes succesfully. Press the button to 'go to task'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-43.png)
 
-Same as before, select the Open task to publish Governance Rules and press button Publish.
+Same as before, select the Open task 'Publish Governance rules' and press button 'Publish'.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-44.png)
 
-Don't leave comments and press publish again
+Don't leave comments and press 'publish' again
 
 # Validation of the imported content
 
@@ -230,11 +231,11 @@ You would reveal the Customer business term in approved state with all detailed 
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-50.png)
 
-Press the Explore relationships button right from the business term name
+Press the 'Explore relationships' button right from the business term name
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-51.png)
 
-The screen will contain only Customer business term firstly. Use the left menu to show also Category and Classification Artifact types
+The screen will contain only Customer business term firstly. Use the left menu to show also 'Category' and 'Classification' Artifact types
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-52.png)
 
