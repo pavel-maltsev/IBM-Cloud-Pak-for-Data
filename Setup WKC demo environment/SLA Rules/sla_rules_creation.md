@@ -4,6 +4,8 @@ This exercise demonstrates additional capabiliites on assessment data quality of
 
 This exercise extends the Metadata Enrichment lab to automatically add new DQ validations on the data assets after they are run through discovery, profiling and term assignment procedures.
 
+As the final results, the DQ remediation task will also be created which can be assigned to data stewards for resolution within workflow logic.
+
 # Creation of the SLA rule for generic control on completeness of the data asset
 
 From the main CP4D navigation menu switch to the Rules list. It may contain the previously imported Data Governance Rules if you've run the [step 2 - Rules section lab](/Setup%20WKC%20demo%20environment/Business%20Terms/Business_terms_upload.md). In my case the screen shows 2 Data Governance rules.
@@ -23,8 +25,7 @@ Press 'Next'
 On the next screen in the drop-down of 'Any data asset' select 'with one of the business terms'
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-3.png)
 
-> [!IMPORTANT]
-> **This term and all the following** in the process should be selected from the 'Customer 360 Degree View' category! That is important since it should be consistent with other parts of the demo scenario. If not, you will not see the proper results at the end!
+> [!IMPORTANT] > **This term and all the following** in the process should be selected from the 'Customer 360 Degree View' category! That is important since it should be consistent with other parts of the demo scenario. If not, you will not see the proper results at the end!
 
 In the field to the right from it start typing 'cust' and find in the drop-down list the 'Customer' business term. Primary category of the term is listed right below the term itself on the selection screen, but is not visible after you confirm selection.
 
@@ -170,6 +171,10 @@ Also you'd need to check the BANK_ACCOUNTS data asset for SLA assessment results
 Can you explain why on the Data Quality tab you see only one SLA rule while on previous data assets there have been two?
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-34.png)
+
+At the same time together with acqnowledgement of the SLA violations on the data assets page we have received the Tasks for remediation in the Task inbox accessible from main CP4D navigation menu
+
+![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-35.png)
 
 This concludes the SLA rules lab section.
 
