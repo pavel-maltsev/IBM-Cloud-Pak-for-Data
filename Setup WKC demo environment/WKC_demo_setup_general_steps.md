@@ -14,10 +14,11 @@ This github section provides the sample steps and guides to setup the basic demo
 0. Pre-work - [here](/Setup%20WKC%20demo%20environment/Pre-work.md)
 
 1. Reference data sets - [here](/Setup%20WKC%20demo%20environment/Reference%20data/Reference_Data.md)
-2. Business terms and Categories, Governance rules and Policies - [here](/Setup%20WKC%20demo%20environment/Business%20Terms/Business_terms_upload.md)
+2. Business terms and Categories, Governance rules and Policies - [here](/Setup%20WKC%20demo%20environment/Business%20Terms/Business_terms_upload.md) - approximate duration 10 minutes
 3. Data Protection rules
 4. Platform connections
 5. Projects
 6. Catalogs
 7. Metadata import assets
 8. Data assets (remote of different types and local)
+9. Data quality SLA rules - [here](/Setup%20WKC%20demo%20environment/SLA%20Rules/sla_rules_creation.md)
