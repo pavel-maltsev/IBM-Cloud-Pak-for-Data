@@ -40,7 +40,7 @@ Perform the same steps for the 'Locations' category
 >
 > Log off from the system by clicking colored circle icon on the top-right, then relogin to the CP4D with your own account.
 
-Switch to the Categories list top page. Select 'Add category - Import from file' on top-right.
+From the CP4D navigation menu on top-left of the screen switch to the Categories list top page. Select 'Add category - Import from file' on top-right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-8.png)
 
@@ -48,13 +48,13 @@ Drag-n-drop the file with categories into the pop-up window
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-9.png)
 
-Press Next button
+Press 'Next' button
 
 Select 'Replace all values' and click 'Next'
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-11.png)
 
-In a while you should see the Import Summary screen to confirm successful upload
+In a while you should see the 'Import Summary' screen to confirm successful upload
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-12.png)
 
