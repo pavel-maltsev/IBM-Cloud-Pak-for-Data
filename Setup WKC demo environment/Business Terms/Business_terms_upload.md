@@ -35,6 +35,11 @@ Perform the same steps for the 'Locations' category
 
 # Import of the Categories sample data
 
+> [!IMPORTANT]
+> The next steps should be performed under YOUR USER NAME to which you've assigned category privileges in previous steps!
+>
+> Log off from the system by clicking colored circle icon on the top-right, then relogin to the CP4D with your own account.
+
 Switch to the Categories list top page. Select 'Add category - Import from file' on top-right.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-8.png)
