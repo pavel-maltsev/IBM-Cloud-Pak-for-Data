@@ -45,8 +45,6 @@ Drag-n-drop the file with categories into the pop-up window
 
 Press Next button
 
-![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-10.png)
-
 Select 'Replace all values' and click Next
 
 ![alt text](/Setup%20WKC%20demo%20environment/Business%20Terms/images/import_glossary-11.png)
