@@ -2,9 +2,25 @@
 
 ## Table of Contents
 
+- [What's new](#whats-new)
 - [Skills](#skills)
 - [Data Lineage and Manta FAQ](#manta-faq)
 - [Setting up Governance demo](#how-to-prepare-your-own-demo-environment-for-ibm-knowledge-catalog)
+
+# What's new
+
+## 2024-05-15
+
+New lab guide steps on Data Protection Rules - [here](/Setup%20WKC%20demo%20environment/Data%20Protection%20Rules/Data_protection_rules.md)
+New lab guide steps on Glosary import for demo
+
+## 2024-05-01
+
+New lab guide on SLA Rules - [here](/Setup%20WKC%20demo%20environment/SLA%20Rules/sla_rules_creation.md)
+
+## 2023
+
+Added Manta complete lab excersise - [here](/Data%20Lineage/Data_Lineage_lab_exercise.md)
 
 # Skills
 
@@ -31,18 +47,3 @@ You may use the Deployer or similar service for configuring the proper configura
 ## Demo content of IKC
 
 For the creation of the proper demo environment you may need to add the below listed content to the CP4D IKC service. [Detailed guide can be found here](/Setup%20WKC%20demo%20environment/WKC_demo_setup_general_steps.md)
-
-# What's new
-
-## 2024-05-15
-
-New lab guide steps on Data Protection Rules - [here](/Setup%20WKC%20demo%20environment/Data%20Protection%20Rules/Data_protection_rules.md)
-New lab guide steps on Glosary import for demo
-
-## 2024-05-01
-
-New lab guide on SLA Rules - [here](/Setup%20WKC%20demo%20environment/SLA%20Rules/sla_rules_creation.md)
-
-## 2023
-
-Added Manta complete lab excersise - [here](/Data%20Lineage/Data_Lineage_lab_exercise.md)
