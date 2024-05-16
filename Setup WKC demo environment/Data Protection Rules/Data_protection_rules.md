@@ -145,6 +145,8 @@ On the 'Profile' tab you will now see all the same information except for the 3 
 
 On the 'Asset' page you will find that 3 fields have been now masked according to the rules you've created. Emails still hold the '@' sign and domain. Phone columns now have all values been replaced by 'XXXXXXXXX'. The Shield icon accompanies now the header column name line next to each protected column.
 
+![alt text](/Setup%20WKC%20demo%20environment/Data%20Protection%20Rules/images/DPrules-21.png)
+
 This concludes the Data Protection rules lab section.
 
 [Back to Setup IKC demo environment page](/Setup%20WKC%20demo%20environment/WKC_demo_setup_general_steps.md)
