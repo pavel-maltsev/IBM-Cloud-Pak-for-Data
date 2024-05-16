@@ -6,11 +6,11 @@
 - [Data Lineage and Manta FAQ](#manta-faq)
 - [Setting up Governance demo](#how-to-prepare-your-own-demo-environment-for-ibm-knowledge-catalog)
 
-## Skills
+# Skills
 
 Team requirements for the starting the CP4D journey are [located here](/Requirements/skills_requirements.md)
 
-## Manta FAQ
+# Manta FAQ
 
 - Licensing
 
@@ -20,23 +20,29 @@ Team requirements for the starting the CP4D journey are [located here](/Requirem
 
   airgapped import from [Informatica PowerCenter](/Data%20Lineage/Metadata%20Import/InformaticaPowerCenter.md)
 
-## How to prepare your own demo environment for IBM Knowledge Catalog
+- Complete lab excersise on Manta lineage creation (data sources, pipelines creation, scans and visualisation of the results) [can be found here](/Data%20Lineage/Data_Lineage_lab_exercise.md)
 
-### Setup of the environment
+# How to prepare your own demo environment for IBM Knowledge Catalog
+
+## Setup of the environment
 
 You may use the Deployer or similar service for configuring the proper configuraiton of your services on CP4D platform
 
-### Demo content of IKC + Manta
+## Demo content of IKC
 
 For the creation of the proper demo environment you may need to add the below listed content to the CP4D IKC service. [Detailed guide can be found here](/Setup%20WKC%20demo%20environment/WKC_demo_setup_general_steps.md)
 
-1. Reference data sets - [here](/Setup%20WKC%20demo%20environment/Reference%20data/Reference_Data.md)
-2. Governance rules and Policies
-3. Data Protection rules
-4. Business terms and Categories
-5. Platform connections
-6. Projects
-7. Catalogs
-8. Metadata import assets
-9. Data assets (remote of different types and local)
-10. Data lineage with Manta - [complete demo setup on your own](/Data%20Lineage/Data_Lineage_lab_exercise.md)
+# What's new
+
+## 2024-05-15
+
+New lab guide steps on Data Protection Rules - [here](/Setup%20WKC%20demo%20environment/Data%20Protection%20Rules/Data_protection_rules.md)
+New lab guide steps on Glosary import for demo
+
+## 2024-05-01
+
+New lab guide on SLA Rules - [here](/Setup%20WKC%20demo%20environment/SLA%20Rules/sla_rules_creation.md)
+
+## 2023
+
+Added Manta complete lab excersise - [here](/Data%20Lineage/Data_Lineage_lab_exercise.md)
