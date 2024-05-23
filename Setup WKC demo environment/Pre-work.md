@@ -6,13 +6,16 @@ This chapter describes the main pre-work steps which should be taken to prepare 
 
 The IKC demo requires the following types of the assets to be used:
 
-1. Files to import into Glossary - available in IBM Box folder for IBMers and Business Partners by request [using the following link](https://ibm.box.com/s/6vp8b2ooaldso8df0h0n8n1f2zku75qa)
+1. Files to import into Glossary - available in IBM Box folder for IBMers and Business Partners by request [using the following link](https://ibm.box.com/s/6vp8b2ooaldso8df0h0n8n1f2zku75qa).
 
-   - Categories
-   - Business Terms
-   - Policies and Data Governance Rules
-   - Reference Data Sets
-   - Files with data for DQ tasks
+> [!NOTE]
+> Link is not broken. To access it, please contact me directly.
+
+- Categories
+- Business Terms
+- Policies and Data Governance Rules
+- Reference Data Sets
+- Files with data for DQ tasks
 
 2. External Databases
 
