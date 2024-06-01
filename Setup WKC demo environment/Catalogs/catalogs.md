@@ -4,9 +4,9 @@ To create a new Catalog use the main menu - Catalogs - All catalogs item
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-1.png)
 
-On the freshly installed CP4D you will see 2 catalogs present
+On the freshly installed CP4D you will see 2 catalogs present:
 
-- Defatul
+- Default
 - Platform assets catalog
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-2.png)
@@ -15,7 +15,7 @@ To create the new one press the blue 'New Catalog' button on the top-right
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-3.png)
 
-Provide the Catalog name and the optional Description. In my case if create 'Enterprise Catalog' and keep description empty.
+Provide the catalog 'Name' and the optional 'Description'. In my case if create 'Enterprise Catalog' and keep description empty.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-4.png)
 
@@ -23,11 +23,11 @@ There are several additional options available on the right. One of those is 'En
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-5.png)
 
-Enable it and confirm
+Enable it and confirm.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-6.png)
 
-Next use the radio-switch for enabling reporting on the catalog. Confirm this action also.
+Next use the radio-switch in Controls section for 'Allow reporting on the assets metadata'. Confirm this action also.
 
 ![alt text](/Setup%20WKC%20demo%20environment/Catalogs/images/catalog_creation-7.png)
 
