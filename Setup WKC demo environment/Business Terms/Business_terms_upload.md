@@ -4,6 +4,7 @@ IBM CP4D after standard deployment there are couple of pre-built categories wher
 
 > [!IMPORTANT]
 > When been provided with sample data files with glossary artifacts starting from version 4.8.4 the import files may contain not the paths of the artifacts, but their IDs. as per tests on v4.8.5 the import process replaces for existing artifacts those IDs with 'replace All' options selected only for limited scope. When during the import the Artifact ID from relationship is not found, then it triggers the error.
+>
 > Validate the import sample data set. If CSVs contain not paths, but IDs there is a 2 possible current workarounds. a) (preferred for demo) You need to delete the pre-built content of glossary prior to the import of the sample asset. Then import for all artifact types from the catalog would happen with no errors. b) you may correct the values in the imported files for the proper Artifact IDs, e.g. find the relevant Classification ID from the URL in web browser and place it instead of the value in Policy which refers to it. The 'b' plan is a way to go when you are using the complex environment with some historical data already handled there.
 
 > [!IMPORTANT]
