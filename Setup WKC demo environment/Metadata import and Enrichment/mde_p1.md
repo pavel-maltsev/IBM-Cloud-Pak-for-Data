@@ -181,3 +181,5 @@ As the time passes, the status lines in the MDE details screen will be changing
 ![alt text](/Setup%20WKC%20demo%20environment/Metadata%20import%20and%20Enrichment/images/mde_p1-62.png)
 
 End of Metadata Enrichment lab part1
+
+[Back to Setup IKC demo environment page](/Setup%20WKC%20demo%20environment/WKC_demo_setup_general_steps.md)
