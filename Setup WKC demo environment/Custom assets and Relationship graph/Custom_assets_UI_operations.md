@@ -1,6 +1,6 @@
 # Why we need custom assets
 
-I've recently received one of the questions from existing Information Server - Infosphere Governance Catalog client if they can switch to CP4D IKC with few important features of their current install to be still availabla after migration. The original question was if the following relathionship visualization they have in IGC could be migrated to IKC
+I've recently received one of the questions from existing Information Server - Infosphere Governance Catalog client if they can switch to CP4D IKC with few important features of their current install to be still available after migration. The original question was if the following relathionship visualization they have in IGC could be migrated to IKC
 
 ![alt text](/Setup%20WKC%20demo%20environment/Custom%20assets%20and%20Relationship%20graph/images/custom_assets.png)
 
