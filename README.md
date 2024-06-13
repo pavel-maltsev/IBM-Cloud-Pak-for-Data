@@ -9,6 +9,10 @@
 
 # What's new
 
+## 2024-06-13
+
+New lab guide steps on Custom Assets [here](/Setup%20WKC%20demo%20environment/Custom%20assets%20and%20Relationship%20graph/Custom_assets_UI_operations.md)
+
 ## 2024-05-15
 
 New lab guide steps on Data Protection Rules - [here](/Setup%20WKC%20demo%20environment/Data%20Protection%20Rules/Data_protection_rules.md)
@@ -24,7 +28,7 @@ Added Manta complete lab excersise - [here](/Data%20Lineage/Data_Lineage_lab_exe
 
 # Skills
 
-Team requirements for the starting the CP4D journey are [located here](/Requirements/skills_requirements.md)
+Team requirements for the starting the CP4D journey are [here](/Requirements/skills_requirements.md)
 
 # Manta FAQ
 
