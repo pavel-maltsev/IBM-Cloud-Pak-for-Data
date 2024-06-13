@@ -135,3 +135,7 @@ psql -f demo_small_YYYYMMDD.sql -U postgres
 
 > [!NOTE]
 > Keep in mind that as per script algorithm, if the demo database already exists, it will be deleted and recreated!
+
+# Generation of sample data
+
+https://www.mockaroo.com/

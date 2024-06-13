@@ -25,8 +25,7 @@ Press 'Next'
 On the next screen in the drop-down of 'Any data asset' select 'with one of the business terms'
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-3.png)
 
-> [!IMPORTANT]
-> **This term and all the following** in the process should be selected from the 'Customer 360 Degree View' category! That is important since it should be consistent with other parts of the demo scenario. If not, you will not see the proper results at the end!
+> [!IMPORTANT] > **This term and all the following** in the process should be selected from the 'Customer 360 Degree View' category! That is important since it should be consistent with other parts of the demo scenario. If not, you will not see the proper results at the end!
 
 In the field to the right from it start typing 'cust' and find in the drop-down list the 'Customer' business term. Primary category of the term is listed right below the term itself on the selection screen, but is not visible after you confirm selection.
 
@@ -49,8 +48,9 @@ Scroll down and press 'Select +' button in the 'Remediation task' section
 Select radiobutton next to 'default' workflow and then press 'Select'§ button in the bottom-right corner
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-8.png)
+Press 'Select' button on the workflow screen to confirm, then
 
-Press now the Create button at the bottom-right corner to confirm the creation of the SLA rule.
+press now the Create button at the bottom-right corner to confirm the creation of the SLA rule.
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-9.png)
 
