@@ -1,7 +1,7 @@
 The deployment of Product Master on CP4D v5 is performed as a sequencial install of several components in a proper order. In many of the steps prior to continue with deployment of next component the specific configuration activiites on the previous one have to be performed.
 
 ```mermaid
-Deployment schema;
+graph TD;
     A-->B;
     A-->C;
     B-->D;
