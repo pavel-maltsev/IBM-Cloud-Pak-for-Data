@@ -18,31 +18,35 @@ graph TD;
     O-->P[Post-install configuration of Product Master];
 ```
 
-# Create db2 database in CP4D with the following parameters
+# Creation and configuration of PIMDB on DB2
+
+Providing the repository tier is must-have pre-requisite for the deployment of IBM Product Master. According to current documentation, the supported repository types are Oracle and DB2. Since in this setup we deploy the Product Master service on Cloud Pak for Data, the default should be deployment of the DB2 for these purposes, but still Oracle outside of the cluster remains the valid option. For Oracle related pre-requisites please refer to documentation of PM and Oracle.
+
+Below on the screenshot are parameters which I've used for the base setup of the demo instance of DB2. The proper sizing excerse should be performed for production deployment jointly with IBM technical team.
 
 ![alt text](image.png)
 
-Get information about CP4D project you install service into from oc web console
+Get information about CP4D project you install service into from oc web console. At my cluster it's 'cpd'.
 
 ![alt text](image-1.png)
 
-Get information about installed DB2 instance
+Get information about installed DB2 instance. The cluster may have several instanced deployed. E.g. in my case the second instance stands for repository of Cognos Analytics - another service on CP4D.
 
 ![alt text](image-2.png)
 
-The one you need is similar to the Deployment ID from the first screenshot
+The one you need is by name similar to the Deployment ID from the first screenshot.
 
 ![alt text](image-3.png)
 
-Get the OC login command from web ui
+Get the OC login command from Web-UI
 
 ![alt text](image-4.png)
 
-Now open the terminal and use the login command to get to openshift cluster
+Now open the terminal and use the login command to get to openshift cluster. Top-right corner, 'Copy login command', on the next screen - 'Display token'.
 
 ![alt text](image-5.png)
 
-Switch to the proper project
+Currently message shows you are in the 'default' project. Switch to the proper project ('cpd' in my case).
 
 ![alt text](image-6.png)
 
