@@ -16,7 +16,7 @@ graph TD;
 
 ```mermaid
 graph TD;
-    Getting configuration of the cluster-->Deployment of the cpd-cli on the bastion node;
+    Getting-->Deployment;
     Deployment of the cpd-cli on the bastion node-->Confugration of environment variables;
 ```
 
