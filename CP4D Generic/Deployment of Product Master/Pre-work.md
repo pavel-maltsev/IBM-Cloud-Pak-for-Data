@@ -17,7 +17,7 @@ graph TD;
 ```mermaid
 graph TD;
     Getting-->Deployment;
-    Deployment of the cpd-cli on the bastion node-->Confugration of environment variables;
+    Deployment-->Confugration of environment variables;
 ```
 
 # Create db2 database in CP4D with the following parameters
