@@ -2,22 +2,17 @@ The deployment of Product Master on CP4D v5 is performed as a sequencial install
 
 ```mermaid
 graph TD;
-    Getting configuration of the cluster-->Deployment of the cpd-cli on the bastion node;
-    Deployment of the cpd-cli on the bastion node-->Confugration of environment variables;
-    Deployment of DB2 service on CP4D-->Creation and configuration of PIMDB on DB2;
-    Deployment of IKC service on CP4D-->Creation and configuration of Catalog and user token on IKC;
-    Creation and configuration of Catalog and user token on IKC-->Start of Product Master Service deployment;
-    Creation and configuration of PIMDB on DB2-->Start of Product Master Service deployment;
-    Deployment of OpenSearch service on Openshift-->Start of Product Master Service deployment;
-    Start of Product Master Service deployment-->Product Master Service deployment;
-    Product Master Instance deployement start-->Product Master Instance deployment;
-    Product Master Instance deployment-->Post-install configuration of Product Master;
-```
-
-```mermaid
-graph TD;
-    Getting-->Deployment;
-    Deployment-->'Configuration';
+    A[Getting configuration of the cluster]-->B [Deployment of the cpd-cli on the bastion node];
+    B-->C [Confugration of environment variables];
+    C-->M [Start of Product Master Service deployment];
+    D [Deployment of DB2 service on CP4D]-->E [Creation and configuration of PIMDB on DB2];
+    F [Deployment of IKC service on CP4D]-->G [Creation and configuration of Catalog and user token on IKC];
+    G-->M;
+    E-->M;
+    H [Deployment of OpenSearch service on Openshift]-->M;
+    M-->N [Product Master Service deployment start];
+    N-->O [Product Master Instance deployment];
+    O-->P [Post-install configuration of Product Master];
 ```
 
 # Create db2 database in CP4D with the following parameters
