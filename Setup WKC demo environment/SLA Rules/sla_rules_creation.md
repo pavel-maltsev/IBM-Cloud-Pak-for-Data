@@ -17,6 +17,8 @@ In top-right select 'Add rule - New data quality SLA rule'
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-1.png)
 
 Fill in the Name and Business definition as shown on screenshot
+'Customer Data Completeness'
+'Customer Data should be complete'
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-2.png)
 
@@ -65,6 +67,9 @@ Return back to the Rules top level screen
 # Creation of the SLA rule for DQ control on specific attributes of the selected assets
 
 Repeat the actions of the first SLA rule creation to setup the second DQ control.
+
+'Customer Asset Data fields DQ'
+'Data quality of the customer data attributes should be high'
 
 ![alt text](/Setup%20WKC%20demo%20environment/SLA%20Rules/images/sla-12.png)
 
