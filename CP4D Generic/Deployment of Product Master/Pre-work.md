@@ -17,7 +17,7 @@ graph TD;
 ```mermaid
 graph TD;
     Getting-->Deployment;
-    Deployment-->'Confugration of environment variables';
+    Deployment-->'Configuration';
 ```
 
 # Create db2 database in CP4D with the following parameters
