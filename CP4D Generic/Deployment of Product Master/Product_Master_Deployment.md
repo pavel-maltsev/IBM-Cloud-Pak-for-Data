@@ -557,16 +557,6 @@ As you can see, even without the need to restart the instance creation, all the 
 
 Job done!
 
-# Verification of Database connection
-
-Login to Db2 pod and use the path `/opt/MDM/bin/` to initiate the script run for testing the repository connection status
-
-![alt text](images/PIMDB_repo_test.png)
-
-![alt text](images/PIMDB_repo_test-1.png)
-
-This is the confirmation that all connection parameters including username and password have been provided correctly, same as the repository itself is up and running.
-
 ---
 
 # Verification of instance
