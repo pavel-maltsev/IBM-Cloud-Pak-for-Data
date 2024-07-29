@@ -37,6 +37,29 @@ For this specific excersise I'm using the previously deployed IKC service with a
 
 # Deployment of DB2 service on CP4D
 
+For this demo I've used the Deployer pipeline documented on the IBM github. Since the Cognos Analytics service also required repository, it has been deployed together with instance. This instance you will see later on this guide and I will show how to distinguish that one from the one we will work with.
+
+ConfigMap part for DB2 originally used has been the following:
+
+''' - name: db2
+description: Db2 OLTP
+size: small
+instances: - name: ca-metastore
+metadata_size_gb: 20
+data_size_gb: 20
+backup_size_gb: 20  
+ transactionlog_size_gb: 20
+state: installed
+'''
+
+If you have not deployed other services with DB2 requirement on this cluster, then simply the initial the DB2 service in 'small' tier size. Then you may create the instance in CP4D web UI.
+
+''' - name: db2
+description: Db2 OLTP
+size: small
+state: installed
+'''
+
 # Creation and configuration of PIMDB on DB2
 
 Providing the repository tier is must-have pre-requisite for the deployment of IBM Product Master. According to current documentation, the supported repository types are Oracle and DB2. Since in this setup we deploy the Product Master service on Cloud Pak for Data, the default should be deployment of the DB2 for these purposes, but still Oracle outside of the cluster remains the valid option. For Oracle related pre-requisites please refer to documentation of PM and Oracle.
@@ -91,11 +114,15 @@ Get the service name of the database that is to be used as IBM Db2 host database
 
 Defatul port number is 50000 - in my case it's line 2.
 
-Start creation of the TABLESPACES as per documentation in the pod used earlier:
+Start creation of the TABLESPACES as per documentation in the pod used earlier. Switch to the db2 pod and verify that PIMDB is present there.
 
 ![alt text](images/PIMDB-12.png)
 
+Connect to PIMDB.
+
 ![alt text](images/PIMDB-13.png)
+
+Start execution of the scripts from documentation - as is, no modification is required
 
 ![alt text](images/PIMDB-14.png)
 
@@ -104,6 +131,8 @@ Start creation of the TABLESPACES as per documentation in the pod used earlier:
 ![alt text](images/PIMDB-16.png)
 
 ![alt text](images/PIMDB-17.png)
+
+Make sure that execution is successfull. If not, debug that with your DB2 administrator.
 
 # Install OpenSearch
 
