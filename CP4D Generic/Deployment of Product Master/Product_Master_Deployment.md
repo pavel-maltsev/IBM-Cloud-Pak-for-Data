@@ -182,11 +182,6 @@ Then clicking the `API key` button on top-right.
 
 ![alt text](images/IKC_Conf-2.png)
 
-# Deployment of OpenSearch service on Openshift
-
-> [!CAUTION]
-> This article is still in work. Instructions as of now do not cover the full deployment process.
-
 # Deployment of DB2 service on CP4D
 
 For this demo I've used the Deployer pipeline documented on the IBM github. Since the Cognos Analytics service also required repository, it has been deployed together with instance. This instance you will see later on this guide and I will show how to distinguish that one from the one we will work with.
