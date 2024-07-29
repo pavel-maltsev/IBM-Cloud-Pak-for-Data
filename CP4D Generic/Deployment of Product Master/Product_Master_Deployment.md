@@ -23,12 +23,6 @@ graph TD;
     O-->P[Post-install configuration of Product Master];
 ```
 
-Before you begin, make sure you have setup the CPD-CLI.
-
-Solution guide can be found here `https://www.ibm.com/docs/en/cloud-paks/cp-data/5.0.x?topic=cli-installing-cpd`
-
-The distributive can be downloaded from this link `https://github.com/IBM/cpd-cli/releases`
-
 # Confugration of environment variables
 
 The bastion node or your local laptop you plan to use for deployment of Product Master or any other services using CPD-CLI should use the proper set of Environment variables in order to use the scripts from documentation with minimum changes.
@@ -427,7 +421,141 @@ Docker is a must-have pre-req for the CP4D deployment, so it should be installed
 
 If not installed, switch to root and perfom deployment. Here is the sample for RHEL OS.
 
-![alt text](image.png)
+![alt text](images/PM_deployment.png)
+
+## CPD_CLI deployment
+
+Before you begin, make sure you have setup the CPD-CLI.
+
+Solution guide can be found here `https://www.ibm.com/docs/en/cloud-paks/cp-data/5.0.x?topic=cli-installing-cpd`
+
+The distributive can be downloaded from this link `https://github.com/IBM/cpd-cli/releases`
+
+Switch back to admin user, create cpd-cli directory in your home folder.
+
+Then download cpd-cli distributive using wget command from the URL you will find in documentation for your OS by the links above
+
+![alt text](images/PM_deployment-1.png)
+
+Unpack the distributive from Tar
+
+![alt text](images/PM_deployment-2.png)
+
+Make sure you have at the same location the file of Environment variables, which has been created on the early steps.
+
+Source those variables.
+
+![alt text](images/PM_deployment-3.png)
+
+Add cpd-cli to the PATH.
+
+![alt text](images/PM_deployment-4.png)
+
+Next step is to log in to the cluster. If you have Environment variable set correctly, then the default command from the documentation script should work
+
+![alt text](images/PM_deployment-5.png)
+
+![alt text](images/PM_deployment-6.png)
+
+Initiate the deployment of Product Master Service
+
+![alt text](images/PM_deployment-7.png)
+
+The run of apply-olm should finish successfully
+
+![alt text](images/PM_deployment-8.png)
+
+Start creation of Custom Resource for the Product Master
+
+![alt text](images/PM_deployment-9.png)
+
+Action should be finished successfully
+
+![alt text](images/PM_deployment-10.png)
+
+Verify the status
+
+![alt text](images/PM_deployment-11.png)
+
+All good so far!
+
+Product Master service has been deployed, but it requires instance for operation. Documentation explains the steps in the Post-install section
+
+## Product Master instance creation
+
+The instance creation has the dependency currently not well described in the documentation. That is the finalization of DB2 related activities intil completion of the Instance creation.
+
+The run of instance creation is a simple command from documentation. Again, if you have proper environment variables file applied, this should be a copy-paste from documentation.
+
+![alt text](images/PM_deployment-12.png)
+
+The issue you may face is that at some point of time the process would be stuck for waiting for resolving some internal dependencies
+
+![alt text](images/PM_deployment-13.png)
+
+If not acting before that, then you will get the error in couple of hours and the instance deployment will be failed
+
+![alt text](images/PM_deployment-14.png)
+
+The possible reason for that is that not all the actions on DB2 repository has been properly complete.
+
+When checking the pods of Product Master you can see that the Scheduler and Workflow pods are not ready and failing.
+
+![alt text](images/PM_deployment-15.png)
+
+Use the steps from documentation Post-install DB2 section to fix the issue.
+
+Connect to the Product Master admin pod. Source the bash_profile. Then switch to the /opt/MDM/bin folder
+
+![alt text](images/PM_deployment-16.png)
+
+Run the ./test_db.sh script
+
+![alt text](images/PM_deployment-17.png)
+
+In my case it showed that connection is failed. Exit the pod.
+
+![alt text](images/PM_deployment-18.png)
+
+Get to the pod of DB2 repository with PIMDB repository
+
+![alt text](images/PM_deployment-19.png)
+
+Check that Database is up and running
+
+![alt text](images/PM_deployment-20.png)
+
+Quit from db2 and exit the pod
+
+![alt text](images/PM_deployment-21.png)
+
+Login back to Product Master admin pod
+
+![alt text](images/PM_deployment-22.png)
+
+Source the bash_profile same way as last time and then switch to the foler /opt/MDM/bin/db
+
+Locate the create_schema.sh script and run it. Confirm that you want the execution to proceed as per screenshot
+
+![alt text](images/PM_deployment-23.png)
+
+Wait for the script to finish. There may be the error related to some rollback, but overal execution will pass OK.
+
+Switch to /opt/MDM/bin folder (1 level up)
+
+Run test_db.sh command again
+
+now it should be finished successfully
+
+![alt text](images/PM_deployment-24.png)
+
+Now exit the Product master admin pod and check the status of the all Product Master pods
+
+![alt text](images/PM_deployment-25.png)
+
+As you can see, even without the need to restart the instance creation, all the pods, including the ones of scheduler and workflow, are Running 1/1
+
+Job done!
 
 # Verification of Database connection
 
