@@ -23,7 +23,150 @@ graph TD;
     O-->P[Post-install configuration of Product Master];
 ```
 
+Before you begin, make sure you have setup the CPD-CLI.
+
+Solution guide can be found here `https://www.ibm.com/docs/en/cloud-paks/cp-data/5.0.x?topic=cli-installing-cpd`
+
+The distributive can be downloaded from this link `https://github.com/IBM/cpd-cli/releases`
+
 # Confugration of environment variables
+
+The bastion node or your local laptop you plan to use for deployment of Product Master or any other services using CPD-CLI should use the proper set of Environment variables in order to use the scripts from documentation with minimum changes.
+
+Build the following file as per my example below. For basic deployment as per this demo you don't actually need to complete all the lines, but only ones as shown.
+
+- OCP_URL - Get this URL from the OC login command in your Openshift console. It may be on different port vs one mentioned in documentation. In my case it's 6443.
+- OCP_USERNAME - kubeadmin or other similar user with administrative privileges on your cluster
+- OCP_PASSWORD - password of the same user
+- OCP_TOKEN - get this value from the OC login command in your Openshift console. In my case that starts with sha256~
+
+- PROJECT_CPD_INST_OPERATORS - get this value from the list of the projects in Openshift console. In my case that is cpd-operators
+- PROJECT_CPD_INST_OPERANDS - get this value from the list of the projects in Openshift console. In my case that is cpd-operators
+
+Get Operators name from this screen in your environment:
+
+![alt text](images/Env_var.png)
+
+Operands is the name of the project you have CP4D deployed. This can be refealed by searching for Pods of other your deployed services (column Namespaces), e.g. IKC you will integrate Product Master Metadata information with later on.
+
+![alt text](images/Env_var-1.png)
+
+- STG_CLASS_BLOCK - get this value from the list of the storage classes in Openshift console. In my case that is ocs-storagecluster-cephfs
+- STG_CLASS_FILE - get this value from the list of the storage classes in Openshift console. In my case that is ocs-storagecluster-cephfs
+
+![alt text](images/Env_var-2.png)
+
+- IBM_ENTITLEMENT_KEY - the Entitlement key for connection to IBM repo.
+
+```
+#===============================================================================
+# Cloud Pak for Data installation variables
+#===============================================================================
+
+# ------------------------------------------------------------------------------
+# Client workstation
+# ------------------------------------------------------------------------------
+# Set the following variables if you want to override the default behavior of the Cloud Pak for Data CLI.
+#
+# To export these variables, you must uncomment each command in this section.
+
+# export CPD_CLI_MANAGE_WORKSPACE=<enter a fully qualified directory>
+# export OLM_UTILS_LAUNCH_ARGS=<enter launch arguments>
+
+
+# ------------------------------------------------------------------------------
+# Cluster
+# ------------------------------------------------------------------------------
+
+export OCP_URL=https://api.XXXXXXX.ocp.techzone.ibm.com:6443
+export OPENSHIFT_TYPE=self-managed
+export IMAGE_ARCH=amd64
+export OCP_USERNAME=kubeadmin
+export OCP_PASSWORD=Place you value here
+export OCP_TOKEN=sha256~XXXXXX-Place you value here
+export SERVER_ARGUMENTS="--server=${OCP_URL}"
+# export LOGIN_ARGUMENTS="--username=${OCP_USERNAME} --password=${OCP_PASSWORD}"
+export LOGIN_ARGUMENTS="--token=${OCP_TOKEN}"
+export CPDM_OC_LOGIN="cpd-cli manage login-to-ocp ${SERVER_ARGUMENTS} ${LOGIN_ARGUMENTS}"
+export OC_LOGIN="oc login ${OCP_URL} ${LOGIN_ARGUMENTS}"
+
+
+# ------------------------------------------------------------------------------
+# Proxy server
+# ------------------------------------------------------------------------------
+
+# export PROXY_HOST=<enter your proxy server hostname>
+# export PROXY_PORT=<enter your proxy server port number>
+# export PROXY_USER=<enter your proxy server username>
+# export PROXY_PASSWORD=<enter your proxy server password>
+
+
+# ------------------------------------------------------------------------------
+# Projects
+# ------------------------------------------------------------------------------
+
+# #export PROJECT_CERT_MANAGER=<enter your certificate manager project>
+# #export PROJECT_LICENSE_SERVICE=<enter your License Service project>
+# #export PROJECT_SCHEDULING_SERVICE=<enter your scheduling service project>
+# export PROJECT_IBM_EVENTS=<enter your IBM Events Operator project>
+# export PROJECT_PRIVILEGED_MONITORING_SERVICE=<enter your privileged monitoring service project>
+export PROJECT_CPD_INST_OPERATORS=cpd-operators
+export PROJECT_CPD_INST_OPERANDS=cpd
+# export PROJECT_CPD_INSTANCE_TETHERED=<enter your tethered project>
+# export PROJECT_CPD_INSTANCE_TETHERED_LIST=<a comma-separated list of tethered projects>
+
+
+
+# ------------------------------------------------------------------------------
+# Storage
+# ------------------------------------------------------------------------------
+
+export STG_CLASS_BLOCK=ocs-storagecluster-cephfs - Place you value here instead
+export STG_CLASS_FILE=ocs-storagecluster-cephfs - Place you value here instead
+
+# ------------------------------------------------------------------------------
+# IBM Entitled Registry
+# ------------------------------------------------------------------------------
+
+export IBM_ENTITLEMENT_KEY=eyJhbGciOiJdivsboksASQUuk-Place you value here instead - that is the long string you own from IBM.
+
+
+# ------------------------------------------------------------------------------
+# Private container registry
+# ------------------------------------------------------------------------------
+# Set the following variables if you mirror images to a private container registry.
+#
+# To export these variables, you must uncomment each command in this section.
+
+# export PRIVATE_REGISTRY_LOCATION=<enter the location of your private container registry>
+# export PRIVATE_REGISTRY_PUSH_USER=<enter the username of a user that can push to the registry>
+# export PRIVATE_REGISTRY_PUSH_PASSWORD=<enter the password of the user that can push to the registry>
+# export PRIVATE_REGISTRY_PULL_USER=<enter the username of a user that can pull from the registry>
+# export PRIVATE_REGISTRY_PULL_PASSWORD=<enter the password of the user that can pull from the registry>
+
+
+# ------------------------------------------------------------------------------
+# Cloud Pak for Data version
+# ------------------------------------------------------------------------------
+
+export VERSION=5.0.0
+
+
+# ------------------------------------------------------------------------------
+# Components
+# ------------------------------------------------------------------------------
+
+export COMPONENTS=ibm-cert-manager,ibm-licensing,scheduler,cpfs,cpd_platform
+# export COMPONENTS_TO_SKIP=<component-ID-1>,<component-ID-2>
+
+
+# ------------------------------------------------------------------------------
+# watsonx Orchestrate
+# ------------------------------------------------------------------------------
+# export PROJECT_IBM_APP_CONNECT=<enter your IBM App Connect in containers project>
+# export AC_CASE_VERSION=<version>
+# export AC_CHANNEL_VERSION=<version>
+```
 
 # Deployment of IKC service on CP4D
 
@@ -183,7 +326,7 @@ This is the confirmation that all connection parameters including username and p
 
 # Verification of instance
 
-Check if Product Master pods are all Running at 1/1 configuration or some may be Complete
+Check if Product Master pods are all Running at 1/1 configuration.
 
 ```
 oc get pods |grep productmaster
