@@ -199,23 +199,25 @@ For this demo I've used the Deployer pipeline documented on the IBM github. Sinc
 
 ConfigMap part for DB2 originally used has been the following:
 
-```- name: db2
-description: Db2 OLTP
-size: small
-instances: - name: ca-metastore
-metadata_size_gb: 20
-data_size_gb: 20
-backup_size_gb: 20
- transactionlog_size_gb: 20
-state: installed
+```
+- name: db2
+  description: Db2 OLTP
+  size: small
+  instances: - name: ca-metastore
+  metadata_size_gb: 20
+  data_size_gb: 20
+  backup_size_gb: 20
+  transactionlog_size_gb: 20
+  state: installed
 ```
 
 If you have not deployed other services with DB2 requirement on this cluster, then simply the initial the DB2 service in `small` tier size. Then you may create the instance in CP4D web UI.
 
-```- name: db2
-description: Db2 OLTP
-size: small
-state: installed
+```
+- name: db2
+  description: Db2 OLTP
+  size: small
+  state: installed
 ```
 
 # Creation and configuration of PIMDB on DB2
@@ -294,6 +296,10 @@ Make sure that execution is successfull. If not, debug that with your DB2 admini
 
 # Install OpenSearch
 
+## Before you install Opensearch
+
+Before installing Opensearch make sure you have helm package deployed.
+
 ## Create persistent volumes.
 
 Change the namespace to project name of your CP4D cluster, same as use proper name of the Storage Class which can be looked up in the web-UI of Openshift
@@ -324,6 +330,78 @@ accessModes:
 ![alt text](image-19.png)
 
 ![alt text](image-20.png)
+
+Using terminal login to Oopenshift and check if any Opensearch repository installed
+
+![alt text](images/OSearch_Conf.png)
+
+In my case there is no such repository, then it should be deployed and presence should be validated.
+
+![alt text](images/OSearch_Confimage-1.png)
+
+![alt text](images/OSearch_Confimage-2.png)
+
+Update the repository
+
+![alt text](images/OSearch_Confimage-3.png)
+
+Deploy OpenSearch
+
+![alt text](images/OSearch_Confimage-4.png)
+
+Check pods status intil 3 master pods of OpenSearch would be running. This can be done using Terminal.
+
+![alt text](images/OSearch_Confimage-5.png)
+
+Or same can be checked in Openshift web based console
+
+![alt text](images/OSearch_Confimage-6.png)
+
+Check the service up and running
+
+![alt text](images/OSearch_Confimage-7.png)
+
+Follow the documentation to create server and client certificates with information about your organization. This step is straight forward described in documentation. Replace XXXX values to your own and make notes about those for further steps.
+
+Finalize creation of the certificate
+
+![alt text](images/OSearch_Confimage-8.png)
+
+Before copy of certificate to the containers make sure you have the proper folder strucuture on each of them. If not, create required folders by connecting to each container directly.
+
+![alt text](images/OSearch_Confimage-9.png)
+
+Copy the certificate to the created folders
+
+![alt text](images/OSearch_Confimage-10.png)
+
+Edit ConfigMap of the Opensearch
+
+![alt text](images/OSearch_Confimage-11.png)
+
+In the top "data" section add the line from documentation for max_clause_count
+
+![alt text](images/OSearch_Confimage-12.png)
+
+In the Security section remove default parameters starting from http line down including line with certificate ssignature parameters.
+
+![alt text](images/OSearch_Confimage-13.png)
+
+Replace that with the data from documetnation and the parameters of your own certificate you've noted few steps above.
+
+![alt text](images/OSearch_Confimage-14.png)
+
+Restart the pods of OpenSearch either by changeing the Replicas number as per documentation first to 0 then back to 3. These steps are described in documentation.
+
+Alternative to terminal is to simply delete those 3 pods from web-console. Openshift will automatically restore those as per configuration and number of replicas, but the pod creation will happen with already new parameters you've changed
+
+![alt text](images/OSearch_Confimage-15.png)
+
+Wait until all the pods will be brought back up.
+
+![alt text](images/OSearch_Confimage-16.png)
+
+OpenSearch setup has been complete.
 
 ---
 
