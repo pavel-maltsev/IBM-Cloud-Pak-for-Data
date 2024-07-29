@@ -35,13 +35,13 @@ The bastion node or your local laptop you plan to use for deployment of Product 
 
 Build the following file as per my example below. For basic deployment as per this demo you don't actually need to complete all the lines, but only ones as shown.
 
-- OCP_URL - Get this URL from the OC login command in your Openshift console. It may be on different port vs one mentioned in documentation. In my case it's 6443.
-- OCP_USERNAME - kubeadmin or other similar user with administrative privileges on your cluster
+- OCP_URL - Get this URL from the OC login command in your Openshift console. It may be on different port vs one mentioned in documentation. In my case it's `6443`.
+- OCP_USERNAME - `kubeadmin` or other similar user with administrative privileges on your cluster
 - OCP_PASSWORD - password of the same user
-- OCP_TOKEN - get this value from the OC login command in your Openshift console. In my case that starts with sha256~
+- OCP_TOKEN - get this value from the OC login command in your Openshift console. In my case that starts with `sha256~`.
 
-- PROJECT_CPD_INST_OPERATORS - get this value from the list of the projects in Openshift console. In my case that is cpd-operators
-- PROJECT_CPD_INST_OPERANDS - get this value from the list of the projects in Openshift console. In my case that is cpd-operators
+- PROJECT_CPD_INST_OPERATORS - get this value from the list of the projects in Openshift console. In my case that is `cpd-operators`.
+- PROJECT_CPD_INST_OPERANDS - get this value from the list of the projects in Openshift console. In my case that is `cpd`.
 
 Get Operators name from this screen in your environment:
 
@@ -51,8 +51,8 @@ Operands is the name of the project you have CP4D deployed. This can be refealed
 
 ![alt text](images/Env_var-1.png)
 
-- STG_CLASS_BLOCK - get this value from the list of the storage classes in Openshift console. In my case that is ocs-storagecluster-cephfs
-- STG_CLASS_FILE - get this value from the list of the storage classes in Openshift console. In my case that is ocs-storagecluster-cephfs
+- STG_CLASS_BLOCK - get this value from the list of the storage classes in Openshift console. In my case that is `ocs-storagecluster-cephfs`.
+- STG_CLASS_FILE - get this value from the list of the storage classes in Openshift console. In my case that is `ocs-storagecluster-cephfs`.
 
 ![alt text](images/Env_var-2.png)
 
@@ -176,7 +176,22 @@ For this specific excersise I'm using the previously deployed IKC service with a
 
 # Creation and configuration of Catalog and user token on IKC
 
+For this demo I've created the catalog with the name `Enterprise Catalog` and will use the `admin` user as the owner of this catalog for integration with Product Master
+
+![alt text](images/IKC_Conf.png)
+
+The API key can be received by openning `Profile and settings` page of the `admin` user
+
+![alt text](images/IKC_Conf-1.png)
+
+Then clicking the `API key` button on top-right.
+
+![alt text](images/IKC_Conf-2.png)
+
 # Deployment of OpenSearch service on Openshift
+
+> [!CAUTION]
+> This article is still in work. Instructions as of now do not cover the full deployment process.
 
 # Deployment of DB2 service on CP4D
 
