@@ -296,7 +296,7 @@ Make sure that execution is successfull. If not, debug that with your DB2 admini
 
 # Install OpenSearch
 
-## Before you install Opensearch
+## Before you install OpenSearch
 
 Before installing Opensearch make sure you have helm package deployed.
 
@@ -307,6 +307,8 @@ Change the namespace to project name of your CP4D cluster, same as use proper na
 ![alt text](image-21.png)
 
 ![alt text](image-18.png)
+
+Create first Pesistent Volume Claim using the code below
 
 ```
 cat <<EOF| oc apply -f -
@@ -329,9 +331,13 @@ accessModes:
 
 ![alt text](image-19.png)
 
+Repeate this tep 2 more times for creation of total 3 Pesistent Volume Claims. Only change is the number in the name attribute.
+
 ![alt text](image-20.png)
 
-Using terminal login to Oopenshift and check if any Opensearch repository installed
+## OpenSearch configuration and deployment
+
+Using terminal login to Openshift and check if any Opensearch repository installed
 
 ![alt text](images/OSearch_Conf.png)
 
@@ -404,6 +410,24 @@ Wait until all the pods will be brought back up.
 OpenSearch setup has been complete.
 
 ---
+
+# Secret creation
+
+Prepare the Secret for IBM Product Master deployment. Using the "+" in the top-right of Openshift console create an import of the YAML file with details of pre-requisites you've installed on the cluster. You will need the parameters for DB2 connection, IKC Catalog details and Opensearch configruation. Last one is taken from documentation page in the knowledge center. Last the OpenSearch Certificate should be joined as a single line, no quotes or separator (as per screenshot).
+
+![alt text](images/Secret_YAML.png)
+
+---
+
+# Deployment of Product Master
+
+## Docker deployment
+
+Docker is a must-have pre-req for the CP4D deployment, so it should be installed on the workstation you will be deploying Product Master from.
+
+If not installed, switch to root and perfom deployment. Here is the sample for RHEL OS.
+
+![alt text](image.png)
 
 # Verification of Database connection
 
