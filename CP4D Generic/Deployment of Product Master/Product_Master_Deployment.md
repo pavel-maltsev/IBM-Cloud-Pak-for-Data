@@ -29,7 +29,7 @@ graph TD;
 
 IBM Product Master integrates with IBM Knowledge Catalog service for the metadata management purposes. This integration is optional.
 
-For this specific excersise I'm using the previously deployed IKC service with all additional options set to 'true' and the 'small' tier configuration. But the minimum configuration is also supported.
+For this specific excersise I'm using the previously deployed IKC service with all additional options set to `true` and the `small` tier configuration. But the minimum configuration is also supported.
 
 # Creation and configuration of Catalog and user token on IKC
 
@@ -41,24 +41,24 @@ For this demo I've used the Deployer pipeline documented on the IBM github. Sinc
 
 ConfigMap part for DB2 originally used has been the following:
 
-''' - name: db2
+```- name: db2
 description: Db2 OLTP
 size: small
 instances: - name: ca-metastore
 metadata_size_gb: 20
 data_size_gb: 20
-backup_size_gb: 20  
+backup_size_gb: 20
  transactionlog_size_gb: 20
 state: installed
-'''
+```
 
-If you have not deployed other services with DB2 requirement on this cluster, then simply the initial the DB2 service in 'small' tier size. Then you may create the instance in CP4D web UI.
+If you have not deployed other services with DB2 requirement on this cluster, then simply the initial the DB2 service in `small` tier size. Then you may create the instance in CP4D web UI.
 
-''' - name: db2
+```- name: db2
 description: Db2 OLTP
 size: small
 state: installed
-'''
+```
 
 # Creation and configuration of PIMDB on DB2
 
@@ -68,7 +68,7 @@ Below on the screenshot are parameters which I've used for the base setup of the
 
 ![alt text](images/PIMDB.png)
 
-Get information about CP4D project you install service into from oc web console. At my cluster it's 'cpd'.
+Get information about CP4D project you install service into from oc web console. At my cluster it's `cpd`.
 
 ![alt text](images/PIMDB-1.png)
 
@@ -84,11 +84,11 @@ Get the OC login command from Web-UI.
 
 ![alt text](images/PIMDB-4.png)
 
-Now open the terminal and use the login command to get to openshift cluster. Top-right corner, 'Copy login command', on the next screen - 'Display token'.
+Now open the terminal and use the login command to get to openshift cluster. Top-right corner, `Copy login command`, on the next screen - `Display token`.
 
 ![alt text](images/PIMDB-5.png)
 
-Currently message shows you are in the 'default' project. Switch to the proper project ('cpd' in my case).
+Currently message shows you are in the `default` project. Switch to the proper project (`cpd` in my case).
 
 ![alt text](images/PIMDB-6.png)
 
@@ -100,7 +100,7 @@ Get the password for the DB2 instance you've created earlier. You will need that
 
 ![alt text](images/PIMDB-8.png)
 
-Switch to the 'db2inst1' user.
+Switch to the `db2inst1` user.
 
 ![alt text](images/PIMDB-9.png)
 
@@ -143,7 +143,8 @@ Change the namespace to project name of your CP4D cluster, same as use proper na
 ![alt text](image-21.png)
 
 ![alt text](image-18.png)
-'''
+
+```
 cat <<EOF| oc apply -f -
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -160,8 +161,9 @@ accessModes:
   storageClassName: ocs-storagecluster-cephfs
   volumeMode: Filesystem
   EOF
-  '''
-  ![alt text](image-19.png)
+```
+
+![alt text](image-19.png)
 
 ![alt text](image-20.png)
 
@@ -169,7 +171,7 @@ accessModes:
 
 # Verification of Database connection
 
-Login to Db2 pod and use the path '/opt/MDM/bin/' to initiate the script run for testing the repository connection status
+Login to Db2 pod and use the path `/opt/MDM/bin/` to initiate the script run for testing the repository connection status
 
 ![alt text](images/PIMDB_repo_test.png)
 
@@ -181,15 +183,21 @@ This is the confirmation that all connection parameters including username and p
 
 # Verification of instance
 
+Check if Product Master pods are all Running at 1/1 configuration or some may be Complete
+
+```
 oc get pods |grep productmaster
+```
 
 ![alt text](images/Instance_verif.png)
 
+```
 oc get ProductMaster productmaster-cr -o jsonpath='{.status.productmasterStatus} {"\n"}'
+```
 
 ![alt text](images/Instance_verif-1.png)
 
-To get the access to the platform the proper URL link should be used. This can be revealed using the 'oc get routes' command
+To get the access to the platform the proper URL link should be used. This can be revealed using the `oc get routes` command
 
 ![alt text](images/Instance_verif-2.png)
 
