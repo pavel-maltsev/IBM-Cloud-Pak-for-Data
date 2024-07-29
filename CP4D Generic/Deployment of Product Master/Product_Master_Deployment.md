@@ -1,5 +1,8 @@
 # IBM Product Master sample deployment demo
 
+> [!CAUTION]
+> This article is still in work. Instructions as of now do not cover the full deployment process.
+
 The deployment of Product Master on CP4D v5 is performed as a sequencial install of several components in a proper order. In many of the steps prior to continue with deployment of next component the specific configuration activiites on the previous one have to be performed.
 
 ```mermaid
@@ -70,7 +73,7 @@ Get to the DB2 pod of the name located previously.
 
 ![alt text](images/PIMDB-7.png)
 
-Get the passwrd for the DB2 instance you've created earlier. You will need that later for creation of YAML file
+Get the password for the DB2 instance you've created earlier. You will need that later for creation of YAML file
 
 ![alt text](images/PIMDB-8.png)
 
