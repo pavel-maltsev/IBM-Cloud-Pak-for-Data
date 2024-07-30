@@ -293,9 +293,9 @@ Before installing Opensearch make sure you have helm package deployed.
 
 Change the namespace to project name of your CP4D cluster, same as use proper name of the Storage Class which can be looked up in the web-UI of Openshift
 
-![alt text](image-21.png)
+![alt text](images/OSearch_PVC-3.png)
 
-![alt text](image-18.png)
+![alt text](images/OSearch_PVC.png)
 
 Create first Pesistent Volume Claim using the code below
 
@@ -318,11 +318,11 @@ accessModes:
   EOF
 ```
 
-![alt text](image-19.png)
+![alt text](images/OSearch_PVC-1.png)
 
 Repeate this tep 2 more times for creation of total 3 Pesistent Volume Claims. Only change is the number in the name attribute.
 
-![alt text](image-20.png)
+![alt text](images/OSearch_PVC-2.png)
 
 ## OpenSearch configuration and deployment
 
