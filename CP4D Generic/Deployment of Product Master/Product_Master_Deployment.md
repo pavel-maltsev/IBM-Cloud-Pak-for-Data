@@ -11,15 +11,14 @@ graph TD;
     B-->C[Confugration of environment variables];
     A-->D[Deployment of DB2 service on CP4D];
     A-->F[Deployment of IKC service on CP4D];
-    C-->M[Start of Product Master Service deployment];
+    C-->M[Product Master Service deployment];
     D-->E[Creation and configuration of PIMDB on DB2];
     F-->G[Creation and configuration of Catalog and user token on IKC];
     G-->M;
     E-->M;
     A-->H[Deployment of OpenSearch service on Openshift];
     H-->M;
-    M-->N[Product Master Service deployment start];
-    N-->O[Product Master Instance deployment];
+    M-->O[Product Master Instance deployment];
     O-->P[Post-install configuration of Product Master];
 ```
 
