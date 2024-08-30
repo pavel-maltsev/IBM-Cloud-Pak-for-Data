@@ -1,7 +1,7 @@
 # IBM Product Master sample deployment demo
 
 > [!CAUTION]
-> This article is still in work. Instructions as of now do not cover the full deployment process.
+> This article is still in work. Instructions as of now cover only the deployment process, but do not include testing. This deployment has been described and scenario has been based on the CP4D v5.0.0
 
 The deployment of Product Master on CP4D v5 is performed as a sequencial install of several components in a proper order. In many of the steps prior to continue with deployment of next component the specific configuration activiites on the previous one have to be performed.
 
@@ -319,7 +319,7 @@ accessModes:
 
 ![alt text](images/OSearch_PVC-1.png)
 
-Repeate this tep 2 more times for creation of total 3 Pesistent Volume Claims. Only change is the number in the name attribute.
+Repeate this step 2 more times for creation of total 3 Pesistent Volume Claims. Only change is the number in the name attribute.
 
 ![alt text](images/OSearch_PVC-2.png)
 
