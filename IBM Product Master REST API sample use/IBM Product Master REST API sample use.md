@@ -2,19 +2,21 @@
 
 In this article I would provide the guidance on usage of REST API calls in backend integration with IBM Product Master solution for Master data management.
 
-Master data management solutions are the heart of the core data asset management initiative, which allows companies to build a single view on the Master data across the enterprise. For the specific centralized management style of Master data the IBM Product Master solution is one of the best available nowadays in the market. The solution from IBM does not focus on working only within landscape of IBM vendor SW, but instead allows to manage the data for unified business processes spread through multi-vendor solutions of any Enterprise.
+Master data management solutions as the class are the heart of the core data asset management initiative, which allow companies to build the single view on the corporate Master data across the enterprise. IBM Product Master solution is one of the best available nowadays in the market for particularly centralized style of Master data Management. The solution from IBM does not limit itself on working only within landscape of IBM built SW, but instead allows companies to manage their master data for unified business processes spread through multi-vendor solutions they may have - ERPs, Logistic applicaitons, Asset management solutions, DWHs, etc.
 
 # IBM Product Master concepts
 
-IBM Product Master is the solution which can flexibly fit into any industry use case, enabling the same master data management capabilities, no matter if those are for domains of Governmental, Healthcare, Banking, Retail, Telecom or other organizations.
+IBM Product Master is the solution which can perfectly fit into any industry use case, enabling the same master data management capabilities, no matter if those are for domains of Governmental, Healthcare, Banking, Retail, Telecom or other organizations.
 
-This is possible due to the specific data management and data storage tiers' design of the solution. The concept of "meta-over-meta" keeps the database metadata structures intact, while the services tier allows administrators of the solution to build the Master catalogs with all required hierarchies and item metastructures from scratch and only with web-based UI. It never requires the solution administrators to touch or modify the actual storage reporisoty model, create tables, views or indexes for new or updated master objects.
+This is possible due to the specific data management and data storage tiers' design of the solution. The concept of "meta-over-meta" keeps the database metadata structures intact, while the services tier allows administrators of the solution to build the Master catalogs with all required hierarchies and item metastructures from scratch and only with web-based UI. It never requires the solution administrators to touch or modify the actual storage reporisoty model, create tables, views or indexes for new or updated master objects. No SQL coding!
 
-The flexibility for the solution administration is facilitated by the powerful engine of IBM Product Master which coverts the business-style activities of the administrator to the technical commands for tuning the solution. And then when the Business users work with their domains, the complex Master objects which may be of 100ds of attributes, nested attribute structures, multi-occuring attribute groups or any data type and more, are automatically converted with split of technical metadata (schema) from data content itself. When IPM lands the data into the repository (which is a classical DB2 or Oracle database) the data can't be easily read by SQL queries as the same table of Master Items holds the numerous items from any domain catalogs of solution.
+The flexibility for the solution administration is facilitated by the powerful engine of IBM Product Master which converts the business-style activities of the administrator to the technical commands for tuning the solution. And when the Business users work with their domains, the complex Master objects which may consist of 100ds of attributes, nested attribute structures, multi-occuring attribute groups or any data type and more, then those are automatically converted with split of technical metadata (schema) from data content itself.
+
+When IPM lands the data into the repository (which is a classical DB2 or Oracle database) the data can't be easily read by SQL queries as the same table of Master Items holds the numerous items from any domain catalogs of solution.
 
 This leads to the major block for the data integration initiatives when ETL specialists would like to bypass the security rules and ease the data retrieval from the solution directly by connecting ETL to database, instead of API.
 
-The proper method of data retrieval from IBM PM solution is via APIs. Those allow to repeate any operation available in web-based user UI and place the data consumption under control.
+The proper method of data retrieval from IBM PM solution is via pre-built APIs. Those allow to repeat any operation available in web-based user UI and place the data consumption under control.
 
 # IBM Product Master APIs
 
