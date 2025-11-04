@@ -14,15 +14,15 @@ The flexibility for the solution administration is facilitated by the powerful e
 
 When IPM lands the data into the repository (which is a classical DB2 or Oracle database) the data can't be easily read by SQL queries as the same table of Master Items holds the numerous items from any domain catalogs of solution.
 
-This leads to the major block for the data integration initiatives when ETL specialists would like to bypass the security rules and ease the data retrieval from the solution directly by connecting ETL to database, instead of API.
+This leads to the limitation for the data integration initiatives when ETL specialists would like to bypass the IBM Product Master security rules and ease the data retrieval from the solution directly by connecting ETL to database, instead of API.
 
-The proper method of data retrieval from IBM PM solution is via pre-built APIs. Those allow to repeat any operation available in web-based user UI and place the data consumption under control.
+The proper method of data retrieval from IBM Product Master solution is via pre-built APIs. Those allow to repeat any operation available in web-based user UI and place the data consumption under control.
 
 # IBM Product Master APIs
 
 ## API documentation
 
-The definition of APIs can be found for the specific version of IBM PM in the knowledge center published Swagger file.
+The definition of APIs can be found for the specific version of IBM Product Master in the knowledge center published Swagger file. Here is the link for V14 of solution:
 
 https://www.ibm.com/docs/en/product-master/14.0.0?topic=apis-product-master-rest-api-swagger-files
 
