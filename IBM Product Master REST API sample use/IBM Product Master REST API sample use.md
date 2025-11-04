@@ -62,13 +62,13 @@ Use the REST API call to retrieve the X-AuthToken
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-4.png)
 
-The response will contain the value for the X-AuthToken in on of the Header fields
+The response will contain the value for the X-AuthToken in one of the Header fields
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-5.png)
 
-The Body of response contains the whole list of metaobjects and features of IPM you will have access to using these credentials
+The Body of response contains the whole list of metaobjects and features of IPM you will have access to using these credentials.
 
-You may use the /v1/authToken/validate method to check if retrieved value of the Token is still valid
+You may use the /v1/authToken/validate method to check if retrieved value of the Token is still valid:
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-6.png)
 
@@ -76,11 +76,11 @@ If validation is successful you are now ready to use the token for any other API
 
 ### List Catalogs
 
-Lets try retrieval of the Catalog list of Product Master
+Lets try retrieval of the Catalog list of Product Master.
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-7.png)
 
-The body of the response contains all the details about not only Catalog names, but also information about Access Groups, Hierarchies and Views of specific Catalog
+The body of the response contains all the details about not only Catalog names, but also information about Access Groups, Hierarchies and Views of specific Catalog.
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-8.png)
 
@@ -93,11 +93,11 @@ As you have now the ID of the catalog, you may use that for getting the list of 
 > [!IMPORTANT]
 > The API calls use the same security limitations as the usage of the platform from web-based UI. It means that if your user can't retrieve some of the items or attributes in UI, the same limitations will be applied to response of API call.
 
-Here is the sample of item retrieval for the catalog with ID=172826
+Here is the sample of item retrieval for the catalog with ID=172826.
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-9.png)
 
-The content retrieved is in a form of JSON array where all the master items are held under the section of "entryInfoList"
+The content retrieved is in a form of JSON array where all the master items are held under the section of "entryInfoList".
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-10.png)
 
@@ -109,7 +109,7 @@ Attribute names in IBM Product Master can be localized to several locales depend
 
 That means that the attribute names in Response are also IDs of the specific nodes of item specifications.
 
-For integration purposes that is not a big issue as JSON parser can operate with codes in the JSON schema file instead of the names. but if the goal is to understand what are the actual attribute names behind the code, those could be easily retrieved by browsing the specification, firstly by name
+For integration purposes that is not a big issue as JSON parser can operate with codes in the JSON schema file instead of the names. but if the goal is to understand what are the actual attribute names behind the code, those could be easily retrieved by browsing the specification, firstly by name.
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-11.png)
 
@@ -131,7 +131,7 @@ For those familiar with IBM DataStage ETL tool, the same operations could be per
 
 Few core principles of that operation are:
 
-1. Best is to use the technical user account created on IBM PM side dedicated for ETL integrations by Product Master Administrators. This will provide you the ease of retrieval of Base64 authenticated pair of credentials
+1. Best is to use the technical user account created on IBM PM side dedicated for ETL integrations by Product Master Administrators. This will provide you the ease of retrieval of Base64 authenticated pair of credentials.
 2. The whole set of the calls including authentication is better to be done within same Hierarchical Data stage step-by-step. If not required by specific reasons, do not split the processing between atomic HD stages on the canvas. This would lead to the issues with extra RAM consumption and also bring complexity with transfer of the parameters from response one call to request of the next one.
 3. The Authentication method on the REST call operation should be set to '''NONE'''. The headers should contain your authentication parameters instead.
 
