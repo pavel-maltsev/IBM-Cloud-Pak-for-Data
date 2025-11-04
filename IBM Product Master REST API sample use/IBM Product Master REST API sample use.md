@@ -89,7 +89,9 @@ What is important from the data retrieved are not the names, but the IDs of the 
 ### List items of specific Catalog
 
 As you have now the ID of the catalog, you may use that for getting the list of the items of the catalog.
-What is important to remember here is that the API calls use the same security limitations as the usage of the platform from web-based UI. It means that if your user can't retrieve some of the items or attributes in UI, the same limitations will be applied to response of API call.
+
+> [!IMPORTANT]
+> The API calls use the same security limitations as the usage of the platform from web-based UI. It means that if your user can't retrieve some of the items or attributes in UI, the same limitations will be applied to response of API call.
 
 Here is the sample of item retrieval for the catalog with ID=172826
 
@@ -105,7 +107,7 @@ As you can see the data displayed in the response is given in the same way as co
 
 Attribute names in IBM Product Master can be localized to several locales depending on the user preferences. This allows users to check the Business UI on their own language, while the technical metadata likely is still managed in English.
 
-This means that the attribute names are also IDs of the specific nodes of item specifications.
+That means that the attribute names in Response are also IDs of the specific nodes of item specifications.
 
 For integration purposes that is not a big issue as JSON parser can operate with codes in the JSON schema file instead of the names. but if the goal is to understand what are the actual attribute names behind the code, those could be easily retrieved by browsing the specification, firstly by name
 
