@@ -120,3 +120,15 @@ and then the specification content by it's ID
 ...
 
 ![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/image-15.png)
+
+## Using IBM Product Master REST APIs from IBM DataStage ETL
+
+For those familiar with IBM DataStage ETL tool, the same operations could be performed by using the Hierarchical Data stage on the canvas.
+
+Few core principles of that operation are:
+
+1. Best is to use the technical user account created on IBM PM side dedicated for ETL integrations by Product Master Administrators. This will provide you the ease of retrieval of Base64 authenticated pair of credentials
+2. The whole set of the calls including authentication is better to be done within same Hierarchical Data stage step-by-step. If not required by specific reasons, do not split the processing between atomic HD stages on the canvas. This would lead to the issues with extra RAM consumption and also bring complexity with transfer of the parameters from response one call to request of the next one.
+3. The Authentication method on the REST call operation should be set to '''NONE'''. The headers should contain your authentication parameters instead.
+4. As typical for Hierarchy stage operations, you should keep to the proper sequence of the calls listed from top to the bottom of the left pane list, otherwise you won't be able to refer to the specific fields of the response which is not yet executed.
+5. Jointly with Product Master admins prepare the JSON schema files in order to parse the retrieved data to the normalized format.
