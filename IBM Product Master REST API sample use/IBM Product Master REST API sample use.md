@@ -130,5 +130,16 @@ Few core principles of that operation are:
 1. Best is to use the technical user account created on IBM PM side dedicated for ETL integrations by Product Master Administrators. This will provide you the ease of retrieval of Base64 authenticated pair of credentials
 2. The whole set of the calls including authentication is better to be done within same Hierarchical Data stage step-by-step. If not required by specific reasons, do not split the processing between atomic HD stages on the canvas. This would lead to the issues with extra RAM consumption and also bring complexity with transfer of the parameters from response one call to request of the next one.
 3. The Authentication method on the REST call operation should be set to '''NONE'''. The headers should contain your authentication parameters instead.
-4. As typical for Hierarchy stage operations, you should keep to the proper sequence of the calls listed from top to the bottom of the left pane list, otherwise you won't be able to refer to the specific fields of the response which is not yet executed.
-5. Jointly with Product Master admins prepare the JSON schema files in order to parse the retrieved data to the normalized format.
+
+![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/ETLimage.png)
+
+![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/ETLimage-1.png)
+
+4. To retrieve the value from the header of the REST response you should open the Response tab and create the HEADER attribute with the same name you want to retrieve. The field Default value should not be populated and left empty. In this case after execution of the REST API call the value of returned Header appribute would be available for mapping to other attributes on the subsequent Hierarchy Data stage steps.
+
+![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/ETLimage-2.png)
+
+![alt text](/IBM%20Product%20Master%20REST%20API%20sample%20use/images/ETLimage-3.png)
+
+5. As typical for Hierarchy stage operations, you should keep to the proper sequence of the calls listed from top to the bottom of the left pane list, otherwise you won't be able to refer to the specific fields of the response which is not yet executed.
+6. Jointly with Product Master admins prepare the JSON schema files in order to parse the retrieved data to the normalized format.
